@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-# The items are described in EXILE.EXE beginning at 0xdb3c
+# Usage: e1items.rb path/to/EXILE.EXE
+# Output: creates a table of all items in CSV format
+
 # Each item record is 79 bytes
 # 0     variety
 # 2     level
@@ -14,6 +16,7 @@
 # 75    always zero, maybe used for location
 # 77    value
 
+# open the EXILE.EXE file
 file = File.new(ARGV[0])
 
 # read n items from file and print data in csv format
