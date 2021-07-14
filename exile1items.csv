@@ -1,0 +1,290 @@
+variety,level,bonus,charges,type,graphic,ability,value,id?,zero,name,fullname
+1,4,0,0,1,0,0,1,1,0,Stone dagger,Stone dagger
+1,4,1,0,1,0,0,4,1,0,Bronze dagger,Bronze dagger
+1,4,2,0,1,0,0,80,1,0,Iron dagger,Iron dagger
+1,4,3,0,1,0,0,200,0,0,Dagger,Steel dagger
+1,4,3,0,1,0,0,200,1,0,Steel dagger,Steel dagger
+1,4,10,0,1,0,0,2000,0,0,Knife,Ravage Knife
+1,5,0,0,2,1,0,1,1,0,Club,Club
+1,6,1,0,1,0,0,16,1,0,Bronze short sword,Bronze short sword
+1,6,2,0,1,0,0,300,1,0,Iron short sword,Iron short sword
+1,6,3,0,1,0,0,180,0,0,Short sword,Steel short sword
+1,6,3,0,1,0,0,500,1,0,Steel short sword,Steel short sword
+1,6,3,0,1,0,47,1200,0,0,Short sword,Blessing blade
+1,7,0,0,2,1,0,8,1,0,Stone mace,Stone mace
+1,7,1,0,1,0,0,30,1,0,Bronze rapier,Bronze rapier
+1,7,1,0,2,1,0,80,1,0,Bronze mace,Bronze mace
+1,7,2,0,2,1,0,130,0,0,Mace,Iron mace
+1,7,2,0,2,1,0,380,1,0,Iron mace,Iron mace
+1,7,3,0,2,1,0,700,1,0,Steel mace,Steel mace
+1,7,5,0,1,0,32,3000,0,0,Strange rapier,Heartfinder
+1,7,8,0,2,1,35,80,1,0,Mace,Holy mace
+1,8,-1,0,1,0,0,6,1,0,Stone axe,Stone axe
+1,8,1,0,1,0,0,100,1,0,Bronze axe,Bronze axe
+1,8,1,0,1,0,0,30,0,0,Axe,Bronze axe
+1,8,2,0,1,0,0,400,1,0,Iron axe,Iron axe
+1,8,3,12,1,0,38,150,0,0,Axe,Frost axe
+1,9,3,0,1,0,0,1000,1,0,Steel saber,Steel saber
+1,9,4,0,2,1,51,0,0,0,Hammer,Smite
+1,9,5,0,1,0,32,2000,0,0,Obsidian sword,Alien blade
+1,10,-7,0,1,0,0,400,0,0,Great mace,Mace of Augvah
+1,10,1,0,1,0,0,150,1,0,Bronze broadsword,Bronze broadsword
+1,10,2,0,1,0,0,500,1,0,Iron broadsword,Iron broadsword
+1,12,1,0,2,1,0,450,1,0,Bronze great mace,Bronze great mace
+2,10,-1,0,3,2,0,14,1,0,Stone tip spear,Stone tip spear
+2,10,1,0,3,2,0,200,1,0,Bronze tip spear,Bronze tip spear
+2,10,2,0,3,2,0,600,1,0,Iron tip spear,Iron tip spear
+2,10,3,0,3,2,0,1200,1,0,Steel tip spear,Steel tip spear
+2,10,3,0,3,2,0,350,0,0,Spear,Steel tip spear
+2,10,3,6,3,2,23,500,0,0,Black spear,Death lance
+2,12,2,0,3,21,0,1200,1,0,Iron slith spear,Iron slith spear
+2,12,2,0,3,21,0,300,0,0,Slith spear,Iron slith spear
+2,12,3,0,3,21,0,500,0,0,Slith spear,Steel slith spear
+2,12,4,0,3,21,0,2000,1,0,Steel slith spear,Steel slith spear
+2,13,3,0,2,1,0,750,0,0,Hammer,Iron great hammer
+2,14,-5,0,1,0,14,400,0,0,Greatsword,Grim greatsword
+2,14,1,0,1,0,0,400,1,0,Bronze greatsword,Bronze greatsword
+2,14,5,30,1,0,5,120,1,0,Greatsword,Scrioth
+2,18,1,0,3,2,0,500,1,0,Bronze halberd,Bronze halberd
+2,18,2,5,3,2,5,250,0,0,Halberd,Flame halberd
+2,19,4,13,3,2,38,250,0,0,Halberd,Runed halberd
+3,0,0,0,0,3,0,0,0,0,Gold,Gold
+4,0,0,0,0,4,0,25,1,0,Crude bow,Crude bow
+4,0,1,0,0,4,0,130,0,0,Bow,Cavewood bow
+4,0,1,0,0,4,0,150,1,0,Cavewood bow,Cavewood bow
+4,0,2,0,0,4,0,400,1,0,Bow,Lemonwood bow
+4,0,3,0,0,4,0,1000,1,0,Lemonwood bow,Lemonwood bow
+4,0,3,0,0,4,0,400,0,0,Bow,Lemonwood bow
+4,0,3,0,0,4,0,800,1,0,Bow,Yew bow
+4,0,5,0,0,4,0,1500,1,0,Bow,Magic bow
+5,9,0,20,0,5,0,0,0,0,Arrows,Flint arrows
+5,9,1,10,0,5,33,30,0,0,Arrows,Burning arrows
+5,9,1,12,0,5,0,1,0,0,Arrows,Bronze arrows
+5,9,1,15,0,5,0,5,0,0,Arrows,Bronze arrows
+5,9,1,8,0,5,33,30,0,0,Arrows,Burning arrows
+5,9,4,4,0,5,34,150,0,0,Arrows,Arrows of light
+5,9,4,4,0,5,35,100,0,0,Arrows,Arrows of life
+5,9,4,6,0,5,35,100,0,0,Arrows,Arrows of life
+5,10,0,20,0,5,0,1,1,0,Flint arrows,Flint arrows
+5,10,3,10,0,5,0,10,0,0,Arrows,Steel arrows
+5,10,5,8,0,5,0,35,0,0,Arrows,Magic arrows
+5,11,1,15,0,5,0,5,1,0,Bronze arrows,Bronze arrows
+6,4,0,12,0,6,0,0,0,0,Darts,Darts
+6,4,0,12,0,6,0,1,1,0,Darts,Darts
+6,6,2,8,0,6,0,1,0,0,Throwing knives,Throwing knives
+6,6,2,8,0,6,0,6,1,0,Throwing knives,Throwing knives
+6,6,3,8,0,6,32,18,0,0,Darts,Poison darts
+6,7,3,7,0,6,33,25,0,0,Javelins,Lightning rods
+6,8,4,6,0,6,0,12,0,0,Throwing knives,Steel t. knives
+6,8,6,12,0,6,0,25,0,0,Darts,Magic darts
+6,8,6,8,0,6,0,25,0,0,Darts,Magic darts
+6,10,6,8,0,6,0,30,0,0,Throwing knives,Blessed t. knives
+7,0,0,0,1,7,59,20,1,0,Graymold salve,Graymold salve
+7,0,0,1,1,7,13,25,1,0,Resurrection balm,Resurrection balm
+7,0,0,1,1,7,13,400,1,0,Ressurection balm,Ressurection balm
+7,0,0,1,1,7,15,250,0,0,Potion,Protection brew
+7,0,0,1,1,7,15,250,1,0,Potion,Protection brew
+7,0,0,1,1,7,18,35,1,0,Weak strength p.,Weak strength p.
+7,0,0,1,1,7,20,80,1,0,Weak energy p.,Weak energy p.
+7,0,0,1,1,7,24,600,1,0,Potion,Ambrosia
+7,0,0,1,1,7,31,600,1,0,Potion,Knowledge Brew
+7,0,0,1,1,7,3,25,1,0,Potion,Protection brew
+7,0,0,1,1,7,3,25,1,0,Weak healing p.,Weak healing p.
+7,0,0,1,1,7,4,20,1,0,Weak curing p.,Weak curing p.
+7,0,0,1,1,7,60,20,1,0,Bottle of Wine,Bottle of Wine
+7,0,0,1,1,7,63,200,1,0,Potion,Brew of Lethe
+7,0,0,1,2,8,19,100,0,0,Scroll,Scroll: Poison
+7,0,0,1,2,8,19,120,1,0,Scroll: Poison,Scroll: Poison
+7,0,0,1,2,8,21,100,0,0,Scroll,Scroll: Stealth
+7,0,0,1,2,8,21,100,1,0,Scroll: Stealth,Scroll: Stealth
+7,0,0,1,2,8,21,150,0,0,Scroll,Scroll: Stealth
+7,0,0,1,2,8,22,250,1,0,Scroll: Firestorm,Scroll: Firestorm
+7,0,0,1,2,8,22,300,0,0,Scroll,Scroll: Firestorm
+7,0,0,1,2,8,23,400,0,0,Scroll,Scroll: Kill
+7,0,0,1,2,8,23,400,1,0,Scroll: Kill,Scroll: Kill
+7,0,0,1,2,8,28,200,0,0,Scroll,Scroll: Ice bolt
+7,0,0,1,2,8,37,500,0,0,Scroll,Scroll: Shockwave
+7,0,0,1,2,8,39,50,0,0,Scroll,Scroll: Slow
+7,0,0,1,2,8,5,40,1,0,Scroll: Flame,Scroll: Flame
+7,0,0,1,2,8,5,50,0,0,Scroll,Scroll: Flame
+7,0,0,1,2,8,6,150,0,0,Scroll,Scroll: Fireball
+7,0,0,1,2,8,6,150,1,0,Scroll: Fireball,Scroll: Fireball
+7,0,0,1,2,8,6,200,0,0,Scroll,Scroll: Fireball
+7,0,0,1,3,9,44,120,0,0,Wand,Crystal wand 
+7,0,0,15,3,9,45,200,0,0,Wand,Prismatic wand 
+7,0,0,20,3,9,5,60,0,0,Wand,Wand: flame
+7,0,0,20,3,9,63,10,0,0,Wand,Wand of Ruin 
+7,0,0,2,1,7,18,35,1,0,Weak strength p.,Weak strength p.
+7,0,0,2,1,7,24,600,0,0,Potion,Ambrosia
+7,0,0,2,1,7,3,25,1,0,Weak healing p.,Weak healing p.
+7,0,0,2,1,7,4,20,1,0,Weak curing p.,Weak curing p.
+7,0,0,2,3,9,37,200,0,0,Wand,Wand: shockwave 
+7,0,0,3,1,7,20,80,0,0,Potion,Weak energy p.
+7,0,0,3,3,9,23,400,0,0,Wand,Wand of death 
+7,0,0,4,1,7,4,20,0,0,Potion,Weak curing p.
+7,0,0,4,3,9,23,220,0,0,Scepter,Scepter of Death
+7,0,0,4,3,9,23,750,0,0,Wand,Wand of death 
+7,0,0,4,3,9,44,120,0,0,Wand,Crystal wand 
+7,0,0,4,3,9,45,250,0,0,Wand,Prismatic wand 
+7,0,0,4,3,9,5,60,0,0,Wand,Wand: Flame
+7,0,0,4,3,9,6,250,0,0,Wand,Wand: Fireball
+7,0,0,5,3,9,44,120,0,0,Wand,Crystal wand 
+7,0,0,6,3,9,43,150,0,0,Wand,Wand of Ravaging
+7,0,0,6,3,9,6,120,0,0,Wand,Wand: fireballs 
+7,0,0,6,3,9,6,250,1,0,Wand: Fireball,Wand: Fireball
+7,0,0,8,3,9,19,80,0,0,Wand,Wand of venom
+7,0,0,8,3,9,39,70,0,0,Wand,Wand: slow 
+7,0,0,8,3,9,43,40,0,0,Wand,Wand of Carrunos
+7,0,0,8,3,9,5,60,0,0,Wand,Wand: flame
+7,0,0,8,3,9,5,60,1,0,Wand: Flame,Wand: Flame
+7,1,0,1,1,7,18,100,1,0,Medium str. p.,Medium str. p.
+7,1,0,1,1,7,20,200,1,0,Medium energy p.,Medium energy p.
+7,1,0,1,1,7,3,60,1,0,Med. healing p.,Med. healing p.
+7,1,0,1,1,7,4,50,1,0,Med. curing p.,Med. curing p.
+7,1,0,1,2,8,36,600,0,0,Scroll,Scroll of magic res.
+7,1,0,2,1,7,20,200,0,0,Potion,Medium energy p.
+7,1,0,2,1,7,3,60,0,0,Potion,Med. healing p.
+7,1,0,2,1,7,3,60,1,0,Med. healing p.,Med. healing p.
+7,1,0,3,1,7,20,200,0,0,Potion,Medium energy p.
+7,1,0,4,1,7,3,60,0,0,Potion,Med. healing p.
+7,1,0,5,1,7,20,200,0,0,Potion,Medium energy p.
+7,1,0,6,1,7,3,60,0,0,Potion,Med. healing p.
+7,2,0,12,3,9,38,100,0,0,Staff,Ice Staff
+7,2,0,8,3,9,3,40,0,0,Scepter,Rod of health 
+7,2,0,8,3,9,3,60,0,0,Wand,Rod of health 
+7,3,0,2,1,7,4,150,0,0,Potion,Str. curing p.
+7,4,0,1,1,7,20,200,1,0,Potion,Elixir of Power
+8,0,0,0,0,10,0,0,1,0,Food,Food
+9,0,0,0,0,18,52,0,1,0,,Toadstools
+9,0,0,0,0,18,53,0,1,0,,Comfrey root
+9,0,0,0,0,18,54,0,1,0,,Glowing nettle
+9,0,0,0,0,18,55,0,1,0,,Crypt shrooms
+9,0,0,0,0,18,56,0,1,0,,Asptongue mold
+9,0,0,0,0,18,57,0,1,0,,Ember flowers
+9,0,0,0,0,18,58,0,1,0,,Graymold
+9,0,0,5,0,11,11,8,1,0,Lockpicks,Lockpicks
+9,2,0,5,0,11,11,20,1,0,Fine lockpicks,Fine lockpicks
+9,2,0,6,0,11,12,1,1,0,Torches,Torches
+9,4,0,5,0,11,11,100,1,0,Fine lockpicks,Magic lockpicks
+9,5,0,10,0,22,12,8,0,0,Stones,Glowstone
+9,5,0,10,0,22,12,8,1,0,Glowstone,Glowstone
+10,2,0,0,0,12,0,10,0,0,Buckler,Bronze buckler
+10,2,0,0,0,12,0,10,1,0,Bronze buckler,Bronze buckler
+10,3,0,0,0,12,0,130,1,0,Iron buckler,Iron buckler
+10,3,0,0,0,12,0,20,0,0,Buckler,Iron Buckler
+10,3,0,0,0,12,0,40,0,0,Dummy,Steel great shield
+10,3,0,0,0,12,0,40,0,0,Shield,Bronze shield
+10,3,0,0,0,12,0,40,1,0,Bronze shield,Bronze shield
+10,4,0,0,0,12,0,120,0,0,Shield,Iron shield
+10,4,0,0,0,12,0,250,1,0,Iron shield,Iron shield
+10,4,1,0,0,12,0,250,0,0,Shield,Iron shield
+10,5,0,0,0,12,0,80,0,0,Buckler,Steel Buckler
+10,5,0,0,0,12,16,1500,0,0,Shield,Ice shield
+10,5,0,0,0,12,25,1000,0,0,Shield,Crystal shield
+10,5,2,0,0,12,0,160,0,0,Great shield,Bronze great shield
+10,6,0,0,0,12,0,400,0,0,Shield,Steel shield
+10,6,0,6,0,12,18,1500,0,0,Shield,Shield of Klin
+10,6,0,8,0,12,24,1500,0,0,Shield,Shield of Khar
+10,6,2,0,0,12,0,300,0,0,Great shield,Iron great shield
+10,7,0,0,0,12,0,1200,0,0,Shield,Magic shield
+10,7,0,0,0,12,0,600,1,0,Steel shield,Steel shield
+10,7,2,0,0,12,0,600,0,0,Great shield,Steel great shield
+10,8,1,1,0,12,9,5000,0,0,Shield,Lifeshield
+10,10,2,0,0,12,0,2000,0,0,Great shield,Magic great shield
+11,1,0,0,0,13,0,4,1,0,Leather baldric,Leather baldric
+11,2,0,0,0,13,0,8,1,0,Leather armor,Leather armor
+11,3,1,0,0,13,0,30,1,0,Bronze studded armor,Bronze studded armor
+11,4,0,0,0,13,1,2000,1,0,Cloak of prot.,Cloak of prot.
+11,4,1,0,0,13,0,400,1,0,Iron studded armor,Iron studded armor
+11,5,0,0,0,13,16,800,1,0,Leather armor,Cryos armor
+11,6,0,0,0,13,1,2000,1,0,Cloak of prot.,Cloak of prot.
+11,6,0,0,0,13,1,2400,0,0,Cloak,Gila cloak
+11,6,1,0,0,13,0,800,1,0,Steel studded armor,Steel studded armor
+11,8,2,0,0,13,0,250,1,0,Bronze chain mail,Bronze chain mail
+11,8,2,0,0,13,0,500,0,0,Breastplate,Iron breastplate
+11,9,2,0,0,13,0,1200,1,0,Iron chain mail,Iron chain mail
+11,12,4,0,0,13,0,700,0,0,Plate mail,Bronze plate mail
+11,12,4,0,0,13,0,900,1,0,Bronze plate mail,Bronze plate mail
+11,14,0,0,0,13,0,2500,0,0,Chain mail,Airy chain mail
+11,14,2,0,0,13,0,2000,0,0,Chain mail,Magic chain mail
+11,18,2,0,0,13,47,2000,0,0,Plate mail,Mithral plate mail
+12,0,2,0,0,14,14,0,0,0,Helm,Cursed helm 
+12,1,0,0,0,14,0,6,1,0,Leather helm,Leather helm 
+12,2,0,0,0,14,0,15,0,0,Helm,Bronze helm 
+12,2,0,0,0,14,0,15,1,0,Bronze helm,Bronze helm
+12,2,5,0,0,14,14,15,0,0,Runed helm,Helm of Spite
+12,3,0,0,0,14,0,200,1,0,Iron helm,Iron helm
+12,3,0,0,0,14,0,40,0,0,Helm,Iron helm 
+12,4,0,0,0,14,0,100,0,0,Helm,Steel helm 
+12,4,0,0,0,14,0,400,0,0,Helm,Steel helm
+12,4,0,0,0,14,0,400,1,0,Steel helm,Steel helm
+12,4,1,0,0,14,0,70,0,0,Helm,Bronze greathelm 
+12,5,0,6,0,14,19,120,0,0,Helm,Emerald helm 
+12,5,0,6,0,14,6,150,0,0,Helm,Ruby helm 
+12,5,0,6,0,14,6,800,0,0,Helm,Ruby helm 
+12,5,1,0,0,14,0,150,0,0,Helm,Iron greathelm 
+12,6,0,0,0,14,0,300,0,0,Helm,Magic helm 
+12,6,0,0,0,14,42,1400,0,0,Helm,Helm of speed
+12,6,0,0,0,14,48,800,0,0,Circlet,Blessed circlet
+12,6,1,0,0,14,0,400,0,0,Helm,Steel greathelm 
+12,8,1,0,0,14,0,900,0,0,Helm,Magic greathelm 
+13,0,-1,8,0,15,26,80,0,0,Ring,Ring of Speed
+13,0,0,0,0,15,16,1200,1,0,Ring of fire res.,Ring of fire res.
+13,3,0,0,0,15,7,600,1,0,Bronze ring of prot.,Bronze ring of prot.
+13,5,0,0,0,15,7,1500,0,0,Ring,Silver ring of prot.
+13,5,0,0,0,15,7,2300,1,0,Silver ring of prot.,Silver ring of prot.
+13,8,0,0,0,15,7,2000,0,0,Ring,Gold ring of prot.
+14,0,-3,0,0,16,47,2000,0,0,Necklace,Circlet of giants
+14,0,-1,0,0,16,47,750,0,0,Necklace,Fang necklace
+14,0,0,0,0,16,0,1000,0,0,Necklace,Diamond necklace
+14,0,0,0,0,16,0,400,0,0,Necklace,Gold necklace
+14,0,0,0,0,16,16,1200,0,0,Necklace,Ruby charm
+14,0,0,0,0,16,2,1500,0,0,Necklace,Onyx charm
+14,0,0,0,0,16,48,600,0,0,Necklace,Silver ankh
+14,0,0,0,0,16,49,500,0,0,Necklace,Amulet of the cobra
+14,0,0,1,0,16,9,2000,0,0,Necklace,Lifesaver amulet
+14,0,0,5,0,16,22,150,0,0,Necklace,Fire orb necklace
+14,0,0,8,0,16,22,150,0,0,Necklace,Fire orb necklace
+14,3,-3,0,0,16,46,3000,0,0,Necklace,Necklace of Lords
+15,2,0,1,0,17,8,15,0,0,Poison,Weak poison
+15,2,0,1,0,17,8,15,1,0,Weak poison,Weak poison
+15,3,0,1,0,17,8,15,1,0,Weak poison,Weak poison
+15,3,0,1,0,17,8,40,0,0,Poison,Medium poison
+15,3,0,1,0,17,8,40,1,0,Medium poison,Medium poison
+15,3,0,3,0,17,8,15,1,0,Poison,Weak poison
+15,4,0,1,0,17,8,150,0,0,Poison,Strong poison
+15,4,0,1,0,17,8,40,1,0,Medium poison,Medium poison
+15,4,0,2,0,17,8,40,1,0,Poison,Medium poison
+15,6,0,1,0,17,8,150,1,0,Poison,Strong poison
+15,6,0,1,0,17,8,150,1,0,Strong poison,Strong poison
+15,6,0,1,0,17,8,300,0,0,Poison,Killer poison
+15,6,0,1,0,17,8,300,1,0,Killer poison,Killer poison
+15,8,0,1,0,17,8,300,1,0,Killer poison,Killer poison
+15,8,0,1,0,17,8,300,1,0,Poison,Killer poison
+16,0,0,0,0,22,62,0,0,0,Orb,Orb of Thralni
+16,0,0,0,2,19,0,1000,0,0,Gems,Uncut rubies
+16,0,0,0,2,19,0,2500,0,0,Statue,Spider statue
+16,0,0,0,2,19,0,3000,0,0,Goblet,Jeweled goblet
+16,0,0,0,2,19,0,350,0,0,Gem,Ruby
+16,0,0,0,2,19,0,7500,0,0,Gem,Gem Eyes
+16,0,0,0,2,8,64,100,0,0,Scroll,Research paper
+16,0,0,1,0,19,17,100,1,0,Sapphire,Sapphire
+16,0,0,1,0,19,17,250,1,0,Sapphire,Sapphire
+16,0,0,1,0,22,17,100,0,0,Sapphire,Sapphire
+16,0,0,1,0,22,17,100,1,0,Sapphire,Sapphire
+16,0,0,1,2,19,0,350,0,0,Gem,Ruby
+16,0,0,1,2,19,41,200,0,0,Gem,Piercing crystal
+16,0,0,1,2,19,41,200,1,0,Gem,Piercing crystal
+16,0,0,1,2,22,10,300,0,0,Orb,Orb of Sight
+16,0,0,1,2,22,17,250,0,0,Gem,Sapphire
+16,0,0,1,2,22,24,200,0,0,Orb,Mist globe
+16,0,0,1,2,22,28,200,0,0,Orb,Mist globe
+16,0,0,1,2,22,40,200,0,0,Orb,Mist globe
+16,0,0,3,0,22,17,25,1,0,Sapphire,Crude sapphires
+16,0,0,3,2,22,10,300,0,0,Orb,Orb of Sight
+16,0,0,3,2,22,27,500,0,0,Gem,Shielding crystal
+16,0,0,6,2,22,24,600,0,0,Red gem,Healing periapt
+16,0,0,8,0,19,17,25,1,0,Sapphire,Crude sapphires
+17,0,0,0,0,20,61,2500,0,0,Gloves,Nimble gloves
+17,3,-3,0,0,20,0,1250,0,0,Gauntlets,Gauntlets of Skill
+17,4,0,0,0,20,7,800,0,0,Gauntlets,Silver gauntlets
