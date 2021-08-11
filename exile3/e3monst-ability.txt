@@ -1,0 +1,43 @@
+     0	None
+     1	Throws darts
+     2	Archer
+     3	Throws spears
+     4	Throws rocks
+     5	Throws rocks
+     6	Throws big rocks
+     7	Throws razor disks
+     8	Petrification
+     9	Magic draining ray
+    10	Heat ray
+    11	Invisible
+    12	Splits
+    13	Fearless
+    14	Breathes gas
+    15	Icy touch
+    16	Draining touch
+    17	Icy, draining touch
+    18	Paralyzing touch
+    19	Shoots webs
+    20	Skilled archer
+    21	Steals food
+    22	Creates fire walls
+    23	Creates ice walls
+    24	Radiates antimagic
+    25	Causes disease
+    26	Absorbs spells
+    27	Webs things it hits
+    28	Sleep touch
+    29	Paralysis touch
+    30	Causes mild disease
+    31	Acid touch
+    32	Breathes sleep clouds
+    33	Acid Spit
+    34	Throws Spines
+    35	Summons Slimes
+    36	Highly Protected
+    37	
+    38	
+    39	
+    40	Breathes fire
+    41	Breathes ice
+    42	Breathes acid

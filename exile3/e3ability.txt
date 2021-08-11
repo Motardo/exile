@@ -1,0 +1,137 @@
+     0	None
+     1	Poison resistance
+     2	Magic resistance
+     3	Healing
+     4	Curing poison
+     5	Flame spell
+     6	Fireball
+     7	Protection
+     8	Poison
+     9	Life saving
+    10	Magic map
+    11	Lockpick
+    12	Makes light
+    13	Resurrection balm
+    14	Cursed
+    15	Magic resistance
+    16	Fire resistance
+    17	
+    18	Bless
+    19	Poison spell
+    20	Restores energy
+    21	Stealth spell
+    22	Firestorm
+    23	Kill spell
+    24	Heals totally
+    25	Protects from stoning
+    26	Speed
+    27	Invulnerability
+    28	???
+    29	???
+    30	Major bless and healing
+    31	Affects skill in combat
+    32	Always poisoned
+    33	Flaming weapon
+    34	Demon slayer
+    35	Undead slayer
+    36	Magic resistance
+    37	Shockwave
+    38	Ice bolt
+    39	Casts slow
+    40	???
+    41	Dispel field
+    42	Occasional speed
+    43	???
+    44	Dispel undead
+    45	Dispel spirit
+    46	Regenerate
+    47	Blesses occasionally
+    48	Prot. from undead
+    49	Poison more effective
+    50	Demon slayer
+    51	Giant slayer
+    52	Alchemy Ingredient
+    53	Alchemy Ingredient
+    54	Alchemy Ingredient
+    55	Alchemy Ingredient
+    56	Alchemy Ingredient
+    57	Alchemy Ingredient
+    58	Alchemy Ingredient
+    59	Heals disease
+    60	Good wine
+    61	Aids in thieving
+    62	???
+    63	???
+    64	Use to read
+    65	Returning missile
+    66	Cold resistance
+    67	Cures disease
+    68	Smoky crystal
+    69	Use to read
+    70	Better with missiles
+    71	Summon serpent
+    72	Summon aid
+    73	Summon bug
+    74	Higher speed
+    75	Better at mindduels
+    76	Summon lizard
+    77	Resist poison and disease
+    78	Casts ice walls
+    79	Cures dumbfound
+    80	Charm spells
+    81	Casts antimagic
+    82	???
+    83	???
+    84	Summon rats
+    85	Makes webs
+    86	Makes stinking cloud
+    87	Turns users invisible
+    88	Casts cleanse
+    89	Summons warriors
+    90	Casts shockstorm
+    91	Summon bug
+    92	Exploding arrows
+    93	???
+    94	Higher speed
+    95	Dancing boots
+    96	Ogre strength
+    97	Giant strength
+    98	???
+    99	Better with spells
+   100	Casts Martyr's Shield
+   101	Better in combat
+   102	Very Beautiful
+   103	
+   104	Use to read
+   105	Use to read
+   106	Use to read
+   107	Use to read
+   108	Use to read
+   109	???
+   110	???
+   111	???
+   112	Fire Lizard Egg
+   113	Package
+   114	Make Quickfire
+   115	???
+   116	Use this to read it
+   117	Lightens your burden
+   118	Keeps user awake
+   119	Awakens entire party
+   120	Resists paralysis and sleep
+   121	Removes all acid
+   122	Protects from acid
+   123	Makes sleep clouds
+   124	Sprays acid
+   125	Paralysis beam
+   126	Puts all nearby to sleep
+   127	Protects from many things
+   128	Drips acid
+   129	Very, very heavy
+   130	Paralyzes user
+   131	Extra damage against ALL lizards
+   132	Trade Goods
+   133	Major Haste
+   134	Alien Beast slayer
+   135	Powerful, addictive drug
+   136	

@@ -1,0 +1,24 @@
+     1	1-Handed weapon
+     2	2-Handed weapon
+     3	
+     4	Bow
+     5	Arrows
+     6	Thrown missile
+     7	Potion/Magic Item
+     8	Scroll/Magic Item
+     9	Wand
+    10	Tool
+    11	
+    12	Shield
+    13	Armor
+    14	Helm
+    15	Gloves
+    16	Shield
+    17	Boots
+    18	Ring
+    19	Necklace
+    20	Weapon Poison
+    21	Gem, Stone, Etc.
+    22	Pants
+    23	Crossbow
+    24	Bolts
