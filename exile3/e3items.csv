@@ -1,0 +1,405 @@
+fullname,shortname,value,variety,level,encumb,bonus,protection,charges,melee,pic,ability,combine,unk1,unk2,id,magic,weight
+Gold,Gold,0,3,0,0,0,0,0,0,26,0,0,0,0,1,0,0
+Food,Food,0,11,0,0,0,0,0,0,42,0,0,0,0,1,0,0
+Food,Food,0,11,0,0,0,0,0,0,43,0,0,0,0,1,0,0
+Food,Food,0,11,0,0,0,0,0,0,44,0,0,0,0,1,0,0
+Pants,Pants,2,22,0,0,0,0,0,0,23,0,0,0,99,1,0,6
+Pants,Pants,2,22,0,0,0,0,0,0,24,0,0,0,99,1,0,7
+Shirt,Shirt,2,13,1,0,0,0,0,0,73,0,0,0,98,1,0,5
+Shirt,Shirt,2,13,1,0,0,0,0,0,74,0,0,0,98,1,0,6
+Robes,Robes,3,13,1,0,0,0,0,0,22,0,0,0,100,1,0,14
+Rock,Rock,0,6,3,0,0,0,1,0,71,0,15,0,29,1,0,3
+Rock,Rock,0,6,3,0,0,0,1,0,72,0,15,0,29,1,0,3
+Stick,Stick,0,1,4,0,0,0,0,2,69,0,0,0,101,1,0,8
+Stick,Stick,0,1,4,0,0,0,0,2,70,0,0,0,101,1,0,8
+Mug,Mug,0,21,0,0,0,0,0,0,76,0,0,0,102,1,0,4
+Plate,Plate,0,21,0,0,0,0,0,0,77,0,0,0,103,1,0,5
+Bottle,Bottle,0,21,0,0,0,0,0,0,80,0,0,0,104,1,0,3
+Bottle,Bottle,0,21,0,0,0,0,0,0,81,0,0,0,104,1,0,3
+Candle,Candle,1,10,1,0,0,0,1,0,82,12,38,0,105,1,0,2
+Lamp,Lamp,8,10,8,0,0,0,1,0,83,12,0,0,106,1,0,14
+Garbage,Garbage,0,21,0,0,0,0,0,0,19,0,0,0,107,1,0,15
+Garbage,Garbage,0,21,0,0,0,0,0,0,84,0,0,0,107,1,0,10
+Garbage,Garbage,0,21,0,0,0,0,0,0,87,0,0,0,107,1,0,8
+Garbage,Garbage,0,21,0,0,0,0,0,0,88,0,0,0,107,1,0,7
+Bones,Bones,0,21,0,0,0,0,0,0,68,0,0,0,108,1,0,18
+Skull,Skull,0,21,0,0,0,0,0,0,89,0,0,0,108,1,0,6
+Torches,Torches,2,10,2,0,0,0,6,0,37,12,13,0,26,1,0,3
+Torches,Torches,2,10,2,0,0,0,3,0,37,12,13,0,26,1,0,3
+Book,Book,2,21,0,0,0,0,0,0,78,0,0,0,109,1,0,8
+Book,Book,2,21,0,0,0,0,0,0,79,0,0,0,109,1,0,9
+Book,Book,2,21,0,0,0,0,0,0,90,0,0,0,109,1,0,11
+Vahnatai Robes,Robes,8,13,2,0,0,0,0,0,18,0,0,0,126,1,0,10
+Piece of Paper,Piece of Paper,2,21,0,0,0,0,0,0,33,0,0,0,20,1,0,1
+Stone Knife,Knife,2,1,4,0,0,0,0,1,25,0,0,0,78,1,0,4
+Stone Short Sword,Short Sword,5,1,6,0,0,0,0,1,0,0,0,0,79,1,0,15
+Stone Club,Club,2,1,5,0,0,0,0,2,62,0,0,0,80,1,0,12
+Stone Mace,Mace,5,1,7,0,0,0,0,2,2,0,0,0,81,1,0,18
+Stone Axe,Axe,6,1,7,0,0,0,0,1,3,0,0,0,82,1,0,20
+Stone Spear,Spear,10,2,9,0,0,0,0,3,4,0,0,0,83,1,0,30
+Bronze Knife,Knife,16,1,4,0,1,0,0,1,25,0,0,0,110,0,0,7
+Bronze Short Sword,Short Sword,20,1,6,0,1,0,0,1,0,0,0,0,111,0,0,15
+Bronze Club,Club,12,1,5,0,1,0,0,2,62,0,0,0,80,0,0,12
+Bronze Mace,Mace,22,1,7,0,1,0,0,2,2,0,0,0,81,0,0,18
+Bronze Axe,Axe,30,1,7,0,1,0,0,1,3,0,0,0,82,0,0,20
+Bronze Spear,Spear,40,2,9,0,1,0,0,3,4,0,0,0,83,0,0,30
+Bronze Hammer,Hammer,30,1,8,0,1,0,0,2,2,0,0,0,84,0,0,25
+Bronze Rapier,Rapier,30,1,7,0,1,0,0,1,0,0,0,0,85,0,0,15
+Bronze Broadsword,Broadsword,50,1,9,0,1,0,0,1,0,0,0,0,86,0,0,25
+Bronze Flail,Flail,45,1,9,0,1,0,0,2,9,0,0,0,87,0,0,30
+Bronze Bardiche,Bardiche,200,2,12,0,1,0,0,3,8,0,0,0,88,0,0,35
+Bronze Halberd,Halberd,450,2,18,0,1,0,0,3,5,0,0,0,89,0,0,50
+Bronze Greatsword,Greatsword,400,2,14,0,1,0,0,1,1,0,0,0,90,0,0,45
+Bronze Great Mace,Great Mace,375,2,13,0,1,0,0,2,2,0,0,0,91,0,0,45
+Iron Knife,Knife,35,1,4,0,2,0,0,1,25,0,0,0,110,0,0,8
+Iron Short Sword,Short Sword,50,1,6,0,2,0,0,1,0,0,0,0,111,0,0,15
+Iron Mace,Mace,70,1,7,0,2,0,0,2,2,0,0,0,81,0,0,20
+Iron Axe,Axe,80,1,7,0,2,0,0,1,3,0,0,0,82,0,0,20
+Iron Spear,Spear,140,2,9,0,2,0,0,3,4,0,0,0,83,0,0,30
+Iron Hammer,Hammer,80,1,8,0,2,0,0,2,2,0,0,0,84,0,0,25
+Iron Rapier,Rapier,80,1,7,0,2,0,0,1,0,0,0,0,85,0,0,18
+Iron Broadsword,Broadsword,200,1,9,0,2,0,0,1,0,0,0,0,86,0,0,25
+Iron Flail,Flail,200,1,9,0,2,0,0,2,9,0,0,0,87,0,0,30
+Iron Bardiche,Bardiche,600,2,12,0,2,0,0,3,8,0,0,0,88,0,0,40
+Iron Halberd,Halberd,1000,2,18,0,2,0,0,3,5,0,0,0,89,0,0,50
+Iron Greatsword,Greatsword,900,2,14,0,2,0,0,1,1,0,0,0,90,0,0,50
+Iron Great Mace,Great Mace,850,2,13,0,2,0,0,2,2,0,0,0,91,0,0,45
+Steel Knife,Knife,70,1,4,0,3,0,0,1,25,0,0,0,110,0,0,8
+Steel Short Sword,Short Sword,120,1,6,0,3,0,0,1,0,0,0,0,111,0,0,15
+Steel Mace,Mace,170,1,7,0,3,0,0,2,2,0,0,0,81,0,0,20
+Steel Axe,Axe,200,1,7,0,3,0,0,1,3,0,0,0,82,0,0,20
+Steel Spear,Spear,340,2,9,0,3,0,0,3,4,0,0,0,83,0,0,30
+Steel Hammer,Hammer,200,1,8,0,3,0,0,2,2,0,0,0,84,0,0,25
+Steel Rapier,Rapier,200,1,7,0,3,0,0,1,0,0,0,0,85,0,0,18
+Steel Broadsword,Broadsword,500,1,9,0,3,0,0,1,0,0,0,0,86,0,0,25
+Steel Flail,Flail,500,1,9,0,3,0,0,2,9,0,0,0,87,0,0,30
+Steel Bardiche,Bardiche,1500,2,12,0,3,0,0,3,8,0,0,0,88,0,0,40
+Steel Halberd,Halberd,2000,2,18,0,3,0,0,3,5,0,0,0,89,0,0,50
+Steel Greatsword,Greatsword,1800,2,14,0,3,0,0,1,1,0,0,0,90,0,0,50
+Steel Great Mace,Great Mace,1700,2,13,0,3,0,0,2,2,0,0,0,91,0,0,50
+Magic Knife,Knife,150,1,4,0,5,0,0,1,25,0,0,0,110,0,1,8
+Magic Short Sword,Short Sword,250,1,6,0,5,0,0,1,0,0,0,0,111,0,1,15
+Magic Mace,Mace,350,1,7,0,5,0,0,2,2,0,0,0,81,0,1,20
+Magic Axe,Axe,400,1,7,0,5,0,0,1,3,0,0,0,82,0,1,20
+Magic Spear,Spear,700,2,9,0,5,0,0,3,4,0,0,0,83,0,1,30
+Magic Hammer,Hammer,400,1,8,0,5,0,0,2,2,0,0,0,84,0,1,25
+Magic Rapier,Rapier,400,1,7,0,5,0,0,1,0,0,0,0,85,0,1,18
+Magic Broadsword,Broadsword,1000,1,9,0,5,0,0,1,0,0,0,0,86,0,1,25
+Magic Flail,Flail,1000,1,9,0,5,0,0,2,9,0,0,0,87,0,1,30
+Magic Bardiche,Bardiche,3000,2,12,0,5,0,0,3,8,0,0,0,88,0,1,40
+Magic Halberd,Halberd,4000,2,18,0,5,0,0,3,5,0,0,0,89,0,1,50
+Magic Greatsword,Greatsword,3600,2,14,0,5,0,0,1,1,0,0,0,90,0,1,45
+Magic Great Mace,Great Mace,3400,2,13,0,5,0,0,2,2,0,0,0,91,0,1,45
+Iron Slith Spear,Slith Spear,400,2,12,0,2,0,0,3,6,0,0,0,95,0,0,40
+Steel Slith Spear,Slith Spear,750,2,12,0,3,0,0,3,6,0,0,0,95,0,0,40
+Bronze Wave Blade,Wave Blade,50,1,10,0,1,0,0,1,7,0,0,0,94,0,0,20
+Iron Wave Blade,Wave Blade,200,1,10,0,2,0,0,1,7,0,0,0,94,0,0,20
+Steel Wave Blade,Wave Blade,500,1,10,0,3,0,0,1,7,0,0,0,94,0,0,20
+Magic Wave Blade,Wave Blade,1000,1,10,0,5,0,0,1,7,0,0,0,94,0,1,20
+Iron Razordisks,Razordisks,10,6,9,0,1,0,8,0,29,0,9,0,6,0,0,1
+Steel Razordisks,Razordisks,22,6,9,0,2,0,8,0,29,0,10,0,6,0,0,1
+Darts,Darts,1,6,4,0,0,0,10,0,28,0,1,0,4,0,0,1
+Iron Darts,Darts,3,6,4,0,1,0,8,0,28,0,2,0,4,0,0,1
+Magic Darts,Darts,15,6,4,0,5,0,6,0,28,0,3,0,5,0,1,1
+Throwing Knives,Throw. Knives,2,6,7,0,0,0,10,0,25,0,4,0,96,0,0,2
+Throwing Daggers,Throw. Knives,7,6,7,0,2,0,10,0,25,0,5,0,96,0,0,2
+Arrows,Arrows,1,5,12,0,0,0,12,0,27,0,6,0,2,0,0,1
+Iron Arrows,Arrows,20,5,12,0,2,0,10,0,27,0,7,0,2,0,0,1
+Magic Arrows,Arrows,40,5,12,0,5,0,8,0,27,0,8,0,3,0,1,1
+Javelins,Javelins,2,6,8,0,0,0,8,0,11,0,11,0,7,0,0,3
+Iron Javelins,Javelins,12,6,8,0,1,0,8,0,11,0,12,0,7,0,0,3
+Cavewood Bow,Bow,30,4,0,0,0,0,0,0,10,0,0,0,1,0,0,20
+Lemonwood Bow,Bow,120,4,0,0,1,0,0,0,10,0,0,0,1,0,0,20
+Yew Bow,Bow,240,4,0,0,2,0,0,0,10,0,0,0,1,0,0,20
+Magic Bow,Bow,1000,4,0,0,4,0,0,0,10,0,0,0,1,0,1,10
+Crossbow,Crossbow,80,23,0,0,0,0,0,0,21,0,0,0,93,0,0,35
+Fine Crossbow,Crossbow,250,23,0,0,1,0,0,0,21,0,0,0,93,0,0,35
+Magic Crossbow,Crossbow,3000,23,0,0,4,0,0,0,21,0,0,0,93,0,1,20
+Bolts,Bolts,3,24,17,0,0,0,12,0,86,0,16,0,30,0,0,1
+Iron Bolts,Bolts,10,24,17,0,2,0,10,0,86,0,17,0,30,0,0,1
+Magic Bolts,Bolts,80,24,17,0,5,0,8,0,86,0,18,0,30,0,1,1
+Leather Baldric,Leather Armor,4,13,1,0,0,0,0,0,14,0,0,0,50,1,0,40
+Leather Armor,Leather Armor,10,13,2,0,0,0,0,0,14,0,0,0,51,1,0,50
+Bronze Studded Armor,Studded Armor,30,13,3,1,0,1,0,0,14,0,0,0,52,0,0,70
+Bronze Chain Mail,Chain Mail,75,13,5,2,0,1,0,0,15,0,0,0,53,0,0,90
+Bronze Breastplate,Breastplate,150,13,7,3,0,1,0,0,16,0,0,0,77,0,0,110
+Bronze Plate,Plate Armor,350,13,9,4,0,1,0,0,16,0,0,0,54,0,0,130
+Iron Studded Armor,Studded Armor,100,13,3,1,0,2,0,0,14,0,0,0,52,0,0,80
+Iron Chain Mail,Chain Mail,250,13,5,2,0,2,0,0,15,0,0,0,53,0,0,100
+Iron Breastplate,Breastplate,500,13,7,3,0,2,0,0,16,0,0,0,77,0,0,120
+Iron Plate,Plate Armor,1200,13,9,4,0,2,0,0,16,0,0,0,54,0,0,140
+Steel Studded Armor,Studded Armor,200,13,3,1,0,3,0,0,14,0,0,0,52,0,0,80
+Steel Chain Mail,Chain Mail,400,13,5,2,0,3,0,0,15,0,0,0,53,0,0,100
+Steel Breastplate,Breastplate,800,13,7,3,0,3,0,0,16,0,0,0,77,0,0,120
+Steel Plate,Plate Armor,2000,13,9,4,0,3,0,0,16,0,0,0,54,0,0,140
+Magic Studded Armor,Studded Armor,400,13,3,0,0,5,0,0,14,0,0,0,52,0,1,80
+Magic Chain Mail,Chain Mail,800,13,5,1,0,5,0,0,15,0,0,0,53,0,1,100
+Magic Breastplate,Breastplate,1600,13,7,2,0,5,0,0,16,0,0,0,77,0,1,120
+Magic Plate,Plate Armor,4000,13,9,3,0,5,0,0,16,0,0,0,54,0,1,140
+Mithral Chain Mail,Chain Mail,1500,13,5,0,0,4,0,0,15,0,0,0,112,0,0,50
+Crude Buckler,Buckler,2,12,1,1,0,0,0,0,45,0,0,0,46,0,0,20
+Bronze Buckler,Buckler,15,12,1,1,0,1,0,0,45,0,0,0,46,0,0,20
+Iron Buckler,Buckler,40,12,1,0,0,2,0,0,45,0,0,0,46,0,0,20
+Steel Buckler,Buckler,200,12,1,0,0,3,0,0,45,0,0,0,46,0,0,20
+Magic Buckler,Buckler,500,12,3,0,0,3,0,0,45,0,0,0,46,0,1,10
+Crude Shield,Shield,8,12,4,2,0,0,0,0,13,0,0,0,47,0,0,30
+Bronze Shield,Shield,40,12,4,2,0,1,0,0,13,0,0,0,47,0,0,30
+Iron Shield,Shield,100,12,4,1,0,2,0,0,13,0,0,0,47,0,0,30
+Steel Shield,Shield,400,12,4,1,0,3,0,0,13,0,0,0,47,0,0,30
+Magic Shield,Shield,1000,12,6,1,0,3,0,0,13,0,0,0,49,0,1,25
+Crude Large Shield,Shield,20,12,7,3,0,0,0,0,12,0,0,0,48,0,0,50
+Bronze Large Shield,Shield,100,12,7,2,0,1,0,0,12,0,0,0,48,0,0,50
+Iron Large Shield,Shield,250,12,7,2,0,2,0,0,12,0,0,0,84,0,0,50
+Steel Large Shield,Shield,700,12,7,2,0,3,0,0,12,0,0,0,48,0,0,50
+Magic Large Shield,Shield,2000,12,8,1,0,3,0,0,12,0,0,0,49,0,1,45
+Leather Helm,Helm,3,14,1,0,0,0,0,0,46,0,0,0,55,0,0,15
+Bronze Helm,Helm,20,14,2,1,0,0,0,0,46,0,0,0,55,0,0,15
+Iron Helm,Helm,40,14,3,1,0,0,0,0,46,0,0,0,55,0,0,15
+Steel Helm,Helm,100,14,4,1,0,0,0,0,46,0,0,0,55,0,0,15
+Magic Helm,Helm,250,14,5,1,0,0,0,0,46,0,0,0,56,0,1,15
+Leather Greathelm,Greathelm,12,14,3,1,0,0,0,0,47,0,0,0,57,0,0,25
+Bronze Greathelm,Greathelm,40,14,4,2,0,0,0,0,47,0,0,0,57,0,0,25
+Iron Greathelm,Greathelm,80,14,5,2,0,0,0,0,47,0,0,0,57,0,0,25
+Steel Greathelm,Greathelm,250,14,6,1,0,0,0,0,47,0,0,0,57,0,0,25
+Magic Greathelm,Greathelm,700,14,7,1,0,0,0,0,47,0,0,0,58,0,1,25
+Leather Gloves,Gloves,10,15,1,0,0,0,0,0,48,0,0,0,59,0,0,7
+Bronze Gauntlets,Gauntlets,25,15,2,1,0,0,0,0,17,0,0,0,60,0,0,10
+Iron Gauntlets,Gauntlets,55,15,3,1,0,0,0,0,17,0,0,0,60,0,0,12
+Steel Gauntlets,Gauntlets,150,15,4,1,0,0,0,0,17,0,0,0,60,0,0,12
+Magic Gauntlets,Gauntlets,400,15,5,1,0,0,0,0,17,0,0,0,60,0,1,10
+Boots,Boots,10,17,1,0,0,0,0,0,91,0,0,0,61,0,0,8
+Steel-Toed Boots,Boots,50,17,2,0,0,0,0,0,91,0,0,0,62,0,0,12
+Lockpicks,Lockpicks,8,10,0,0,0,0,4,0,36,11,14,0,27,0,0,1
+Weak Poison,Poison,15,20,2,0,0,0,1,0,55,8,31,0,40,0,0,3
+Medium Poison,Poison,50,20,4,0,0,0,1,0,55,8,32,0,40,0,0,3
+Strong Poison,Poison,150,20,6,0,0,0,1,0,55,8,33,0,40,0,0,3
+Killer Poison,Poison,400,20,8,0,0,0,1,0,55,8,34,0,40,0,0,3
+Ruby,Gem,350,21,0,0,0,0,0,0,57,0,0,0,114,0,0,1
+Sapphire,Gem,250,21,0,0,0,0,1,0,56,17,19,0,31,0,0,1
+Fine Lockpicks,Lockpicks,40,10,2,0,0,0,4,0,36,11,29,0,27,0,0,1
+Magic Lockpicks,Lockpicks,90,10,4,0,0,0,4,0,36,11,30,0,28,0,1,1
+Orb of Sight,Orb,300,8,0,0,0,0,1,0,58,10,0,0,117,0,1,1
+Smoky Crystal,Crystal,100,21,0,0,0,0,1,0,57,68,28,0,118,0,1,1
+Piercing Crystal,Crystal,100,7,0,0,0,0,1,0,57,41,49,0,118,0,1,1
+Mist Globe,Orb,200,8,0,0,0,0,1,0,58,28,0,0,117,0,1,1
+Mist Globe,Orb,200,8,0,0,0,0,1,0,58,24,0,0,117,0,1,1
+Mist Globe,Orb,200,8,0,0,0,0,1,0,58,40,0,0,117,0,1,1
+Shielding Crystal,Crystal,200,7,0,0,0,0,4,0,57,27,0,0,118,0,1,1
+Goo Bomb,Orb,100,8,0,0,0,0,1,0,58,85,0,0,117,0,1,1
+Orb of Foul Vapors,Orb,100,8,0,0,0,0,1,0,58,86,0,0,117,0,1,1
+Dust of Hiding,Dust,100,7,0,0,0,0,3,0,63,87,0,0,42,0,1,1
+Dust of Choking,Dust,1,7,0,0,0,0,6,0,63,28,0,0,43,0,1,1
+Cleansing Powder,Dust,150,7,0,0,0,0,6,0,63,88,36,0,44,0,1,1
+Gold Statue,Figure,750,8,0,0,0,0,1,0,64,72,0,0,120,0,1,1
+Ivory Bug,Figure,200,8,0,0,0,0,1,0,64,73,0,0,120,0,1,1
+Ebony Lizard,Figure,70,8,0,0,0,0,1,0,64,76,0,0,120,0,1,1
+Horn of Warriors,Horn,100,7,0,0,0,0,5,0,65,89,0,0,121,0,1,1
+Scroll: Flame,Scroll,50,8,0,0,0,0,1,0,33,5,0,0,16,0,1,1
+Scroll: Slow,Scroll,50,8,0,0,0,0,1,0,33,39,0,0,16,0,1,1
+Scroll: Poison,Scroll,100,8,0,0,0,0,1,0,33,19,0,0,17,0,1,1
+Scroll: Stealth,Scroll,150,8,0,0,0,0,1,0,33,21,0,0,17,0,1,1
+Scroll: Kill,Scroll,400,8,0,0,0,0,1,0,33,23,0,0,18,0,1,1
+Scroll: Ice Bolt,Scroll,200,8,0,0,0,0,1,0,33,38,0,0,18,0,1,1
+Scroll: Fireball,Scroll,200,8,0,0,0,0,1,0,33,6,0,0,19,0,1,1
+Scroll: Firestorm,Scroll,300,8,0,0,0,0,1,0,33,22,0,0,19,0,1,1
+Scroll: Major Haste,Scroll,700,8,0,0,0,0,1,0,33,133,0,0,19,0,1,1
+Scroll: Shockwave,Scroll,600,8,0,0,0,0,1,0,33,37,0,0,16,0,1,1
+Scroll: Charm,Scroll,250,8,0,0,0,0,1,0,33,80,0,0,17,0,1,1
+Scroll: Magic Res.,Scroll,300,8,0,0,0,0,1,0,33,36,0,0,18,0,1,1
+Alabaster Lizard,Figure,100,8,0,0,0,0,1,0,64,91,0,0,120,0,1,1
+Prismatic Wand,Wand,150,9,0,0,0,0,6,0,34,45,0,0,21,0,1,1
+Crystal Wand,Wand,100,9,0,0,0,0,6,0,34,44,0,0,22,0,1,1
+Brew of Knowledge,Potion,2000,7,0,0,0,0,1,1,30,31,0,0,8,0,1,1
+Brew of Ironskin,Potion,1200,7,1,0,0,0,1,1,31,27,0,0,9,0,1,1
+Brew of Battle,Potion,900,7,0,0,0,0,1,1,32,115,0,0,10,0,1,1
+Brew of Lethe,Potion,500,7,0,0,0,0,1,1,30,63,0,0,11,0,1,1
+Chateau de Almaria 33,Wine,60,7,0,0,0,0,1,1,30,60,0,0,113,0,0,5
+Eau de Toadstool 35,Wine,120,7,0,0,0,0,1,1,30,60,0,0,113,0,0,5
+Fungus Chardonnay 26,Wine,240,7,0,0,0,0,1,1,30,60,0,0,113,0,0,5
+Diamond,Gem,700,21,0,0,0,0,0,0,56,0,39,0,116,0,0,1
+Emerald,Gem,400,21,0,0,0,0,0,0,58,0,40,0,116,0,0,1
+Cursed Helm,Helm,10,14,3,4,0,0,0,0,46,14,0,0,56,0,1,14
+Ruby Helm,Helm,150,14,4,1,0,0,5,0,46,6,0,0,56,0,1,14
+Emerald Helm,Helm,120,14,4,1,0,0,5,0,46,19,0,0,56,0,1,14
+Helm of Speed,Helm,1400,14,4,1,0,0,0,0,47,42,0,0,56,0,1,14
+Runed Helm,Helm,1200,14,5,0,1,0,0,0,46,0,0,0,56,0,1,14
+Crystal,Crystal,10,21,0,0,0,0,0,0,57,0,0,0,116,0,0,0
+Iron Bar,Metal Bar,10,21,0,0,0,0,0,0,67,0,0,0,127,0,0,20
+Silver Bar,Metal Bar,100,21,0,0,0,0,0,0,67,0,0,0,127,0,0,20
+Platinum bar,Metal Bar,1000,21,0,0,0,0,0,0,67,0,0,0,127,0,0,18
+Nimble Gloves,Gloves,1000,15,1,0,0,0,0,0,48,61,0,0,123,0,1,7
+Ogrish Gauntlets,Gauntlets,1000,15,3,1,0,0,0,0,17,96,0,0,123,0,1,10
+Giant Gauntlets,Gauntlets,3000,15,3,1,0,0,0,0,17,97,0,0,123,0,1,10
+Glue Gauntlets,Gauntlets,10,15,0,2,0,0,0,0,17,14,0,0,123,0,1,10
+Aspskin Gloves,Gloves,800,15,1,0,0,0,0,0,48,49,0,0,123,0,1,7
+Asp Gloves,Gloves,20,15,1,0,0,0,0,0,48,98,0,0,123,0,1,7
+Micah's Gloves,Gloves,4000,15,1,0,0,1,0,0,48,99,0,0,123,0,1,7
+Magic Boots,Boots,300,17,2,0,0,1,0,0,91,0,0,0,61,0,1,8
+Dancing Boots,Boots,20,17,1,0,0,0,0,0,91,95,0,0,62,0,1,8
+Boots of Apollo,Boots,100,17,2,0,0,1,10,0,91,26,0,0,63,0,1,8
+Boots of Speed,Boots,3000,17,2,0,0,1,0,0,91,94,0,0,62,0,1,8
+Cursed Boots,Boots,10,17,1,2,0,-3,0,0,91,14,0,0,63,0,1,8
+Crystal Shield,Shield,1000,12,6,2,2,0,0,0,12,25,0,0,49,0,1,30
+Iceshield,Shield,1500,12,6,2,2,0,0,0,12,16,0,0,49,0,1,30
+Shield of Khar,Shield,200,12,6,2,1,0,6,0,12,24,0,0,49,0,1,30
+Shield of Klin,Shield,200,12,6,2,1,0,6,0,12,18,0,0,49,0,1,30
+Lifeshield,Shield,4000,12,7,2,2,0,1,0,12,9,0,0,49,0,1,30
+Shield of Klud,Shield,150,12,6,2,1,0,5,0,12,90,0,0,49,0,1,30
+Martyr's Shield,Shield,100,12,5,2,2,0,5,0,13,100,0,0,49,0,1,30
+Runeshield,Shield,1500,12,6,0,2,0,0,0,13,0,0,0,49,0,1,30
+Cursed Shield,Shield,10,12,4,5,0,0,0,0,13,14,0,0,49,0,1,30
+Strong Curing P.,Potion,350,7,3,0,0,0,1,1,30,4,0,0,8,0,1,5
+Strong Healing P.,Potion,350,7,3,0,0,0,1,1,30,3,0,0,9,0,1,5
+Strong Energy P.,Potion,600,7,3,0,0,0,1,1,30,20,0,0,10,0,1,5
+Strong Strength P.,Potion,160,7,3,0,0,0,1,1,30,18,0,0,11,0,1,5
+Strong Speed P.,Potion,200,7,3,0,0,0,1,1,30,26,0,0,12,0,1,5
+Strong Strength P.,Potion,160,7,3,0,0,0,1,1,30,18,0,0,13,0,1,5
+Strong Invuln. P.,Potion,600,7,3,0,0,0,1,1,30,27,0,0,14,0,1,5
+Strong Skill P.,Potion,1600,7,3,0,0,0,1,1,30,31,0,0,15,0,1,5
+Medium Curing P.,Potion,120,7,1,0,0,0,1,1,30,4,0,0,8,0,1,5
+Medium Healing P.,Potion,180,7,1,0,0,0,1,1,30,3,0,0,9,0,1,5
+Medium Energy P.,Potion,300,7,1,0,0,0,1,1,30,20,0,0,10,0,1,5
+Medium Strength P.,Potion,80,7,1,0,0,0,1,1,30,18,0,0,11,0,1,5
+Medium Speed P.,Potion,100,7,1,0,0,0,1,1,30,26,0,0,12,0,1,5
+Medium Strength P.,Potion,80,7,1,0,0,0,1,1,30,18,0,0,13,0,1,5
+Medium Invuln. P.,Potion,300,7,1,0,0,0,1,1,30,27,0,0,14,0,1,5
+Medium Skill P.,Potion,800,7,1,0,0,0,1,1,30,31,0,0,15,0,1,5
+Weak Curing P.,Potion,40,7,0,0,0,0,1,1,30,4,0,0,8,0,1,5
+Weak Healing P.,Potion,60,7,0,0,0,0,1,1,30,3,0,0,9,0,1,5
+Weak Energy P.,Potion,100,7,0,0,0,0,1,1,30,20,0,0,10,0,1,5
+Weak Strength P.,Potion,40,7,0,0,0,0,1,1,30,18,0,0,11,0,1,5
+Weak Speed P.,Potion,50,7,0,0,0,0,1,1,30,26,0,0,12,0,1,5
+Weak Strength P.,Potion,40,7,0,0,0,0,1,1,30,18,0,0,13,0,1,5
+Weak Invuln. P.,Potion,150,7,0,0,0,0,1,1,30,27,0,0,14,0,1,5
+Weak Skill P.,Potion,400,7,0,0,0,0,1,1,30,31,0,0,15,0,1,5
+Ambrosia,Potion,400,7,0,0,0,0,1,1,30,24,0,0,8,0,1,5
+Potion of Bliss,Potion,250,7,0,0,0,0,1,1,30,30,0,0,9,0,1,5
+Poison Potion,Potion,10,7,0,0,0,0,1,1,30,28,0,0,10,0,1,5
+Potion of Doom,Potion,20,7,0,0,0,0,1,1,30,29,0,0,11,0,1,5
+Brew of Lethe,Potion,50,7,0,0,0,0,1,1,30,63,0,0,12,0,1,5
+Potion of Clarity,Potion,200,7,0,0,0,0,1,1,30,79,0,0,13,0,1,5
+Dart of Returning,Darts,250,6,4,0,2,0,1,0,28,65,0,0,5,0,1,1
+Lightning Rods,Javelins,25,6,8,0,0,0,4,0,11,33,35,0,7,0,1,1
+Infinite Arrow,Arrows,1000,5,9,0,1,0,1,0,27,65,0,0,3,0,1,1
+Arrows of Light,Arrows,150,5,9,0,2,0,5,0,27,34,0,0,3,0,1,1
+Arrows of Life,Arrows,75,5,9,0,2,0,6,0,27,35,0,0,3,0,1,1
+Burning Arrows,Arrows,30,5,9,0,1,0,6,0,27,33,0,0,3,0,1,1
+Exploding Arrows,Arrows,150,5,9,0,1,0,4,0,27,92,0,0,3,0,1,1
+Archer's Bow,Bow,2000,4,0,0,3,5,0,0,10,0,0,0,1,0,1,1
+Bow of Kag,Bow,200,4,0,0,0,0,0,0,10,93,0,0,1,0,1,1
+Poison Darts,Darts,18,6,4,0,3,0,6,0,28,32,0,0,5,0,1,1
+Wand of Venom,Wand,80,9,0,0,0,0,8,0,34,19,0,0,21,0,1,8
+Wand of Fireballs,Wand,120,9,0,0,0,0,6,0,34,6,0,0,22,0,1,8
+Wand of Flame,Wand,60,9,0,0,0,0,8,0,34,5,0,0,23,0,1,8
+Wand of Carrunos,Wand,40,9,0,0,0,0,6,0,34,43,0,0,24,0,1,8
+Wand of Slow,Wand,20,9,0,0,0,0,8,0,34,39,0,0,25,0,1,8
+Wand of Death,Wand,400,9,0,0,0,0,4,0,34,23,0,0,21,0,1,8
+Wand of Charming,Wand,80,9,0,0,0,0,6,0,34,80,0,0,22,0,1,8
+Wand of Nullity,Wand,80,9,0,0,0,0,5,0,34,81,0,0,23,0,1,8
+Wand of Pyhrrus,Wand,350,9,0,0,0,0,5,0,34,82,0,0,24,0,1,8
+Wand of Vorb,Wand,10,9,0,0,0,0,6,0,34,83,0,0,25,0,1,8
+Wand of Rats,Wand,60,9,0,0,0,0,6,0,34,84,0,0,21,0,1,8
+Gold Ring of Regen.,Ring,2500,18,2,0,0,0,0,0,49,46,0,0,65,0,1,1
+Gold Ring of Prot.,Ring,675,18,2,0,0,7,0,0,49,0,0,0,65,0,1,1
+Gold Accuracy Ring,Ring,540,18,2,0,0,0,0,0,49,70,0,0,65,0,1,1
+Gold Skill Ring,Ring,1400,18,2,0,0,0,0,0,49,101,0,0,65,0,1,1
+Gold Weight Ring,Ring,50,18,0,4,0,0,0,0,49,14,0,0,65,0,1,1
+Gold Ring,Ring,270,18,0,0,0,0,0,0,49,0,0,0,65,0,0,1
+Gold Serpent Ring,Ring,180,18,2,0,0,0,3,0,49,71,0,0,65,0,1,1
+Silver Ring of Regen.,Ring,1000,18,1,0,0,0,0,0,49,46,0,0,66,0,1,1
+Silver Ring of Prot.,Ring,300,18,1,0,0,5,0,0,49,0,0,0,66,0,1,1
+Silver Accuracy Ring,Ring,240,18,1,0,0,0,0,0,49,70,0,0,66,0,1,1
+Silver Skill Ring,Ring,600,18,1,0,0,0,0,0,49,101,0,0,66,0,1,1
+Silver Weight Ring,Ring,20,18,0,3,0,0,0,0,49,14,0,0,66,0,1,1
+Silver Ring,Ring,100,18,0,0,0,0,0,0,49,0,0,0,66,0,0,1
+Silver Serpent Ring,Ring,80,18,1,0,0,0,3,0,49,71,0,0,66,0,1,1
+Bronze Ring of Regen.,Ring,500,18,0,0,0,0,0,0,49,46,0,0,67,0,1,1
+Bronze Ring of Prot.,Ring,150,18,0,0,0,3,0,0,49,0,0,0,67,0,1,1
+Bronze Accuracy Ring,Ring,120,18,0,0,0,0,0,0,49,70,0,0,67,0,1,1
+Bronze Skill Ring,Ring,300,18,0,0,0,0,0,0,49,101,0,0,67,0,1,1
+Bronze Weight Ring,Ring,10,18,0,2,0,0,0,0,49,14,0,0,67,0,1,1
+Bronze Ring,Ring,60,18,0,0,0,0,0,0,49,0,0,0,67,0,0,1
+Bronze Serpent Ring,Ring,40,18,0,0,0,0,3,0,49,71,0,0,67,0,1,1
+Ring of Warmth,Ring,1000,18,0,0,0,0,0,0,49,66,0,0,68,0,1,1
+Ring of Fire Res.,Ring,1200,18,0,0,0,0,0,0,49,16,0,0,68,0,1,1
+Ring of Speed,Ring,3000,18,0,0,0,0,0,0,49,74,0,0,68,0,1,1
+Ring of Will,Ring,800,18,0,0,0,0,0,0,49,75,0,0,69,0,1,1
+Aescal's Ring,Ring,750,18,0,0,0,0,0,0,49,67,0,0,69,0,1,1
+Silver Ankh,Necklace,600,19,0,0,0,0,0,0,54,48,0,0,71,0,1,1
+Amulet of the Cobra,Necklace,500,19,0,0,0,0,0,0,53,49,0,0,72,0,1,3
+Ruby Charm,Necklace,1200,19,0,0,0,0,0,0,54,16,0,0,124,0,1,3
+Onyx Charm,Necklace,1000,19,0,0,0,0,0,0,53,2,0,0,70,0,1,3
+Fang Necklace,Necklace,750,19,0,0,0,0,0,0,53,47,0,0,72,0,1,3
+Fire Orb Necklace,Necklace,150,19,0,0,0,0,6,0,52,22,0,0,125,0,1,3
+Diamond Necklace,Necklace,1000,19,0,0,0,0,0,0,54,0,0,0,70,0,0,3
+Gold necklace,Necklace,400,19,0,0,0,0,0,0,52,0,0,0,70,0,0,3
+Lifesaver Amulet,Necklace,2000,19,0,0,0,0,1,0,52,9,0,0,70,0,1,3
+Scale Necklace,Necklace,80,19,0,0,0,0,5,0,53,76,0,0,72,0,1,3
+Amber Periapt,Necklace,600,19,0,0,0,0,0,0,54,77,0,0,71,0,1,3
+Sapphire Necklace,Necklace,100,19,0,0,0,0,4,0,54,78,0,0,70,0,1,3
+Feldspar Charm,Necklace,10,19,0,0,0,-4,0,0,53,14,0,0,72,0,1,3
+Ivory Charm,Necklace,700,19,0,0,0,4,0,0,52,0,0,0,71,0,1,3
+Silver necklace,Necklace,150,19,0,0,0,0,0,0,54,0,0,0,71,0,0,3
+Uranium bar,Metal Bar,200,21,0,0,0,0,0,0,67,110,0,0,127,0,0,20
+Gold bar,Metal Bar,750,21,0,0,0,0,0,0,92,0,0,0,127,0,0,20
+Graymold Salve,Salve,120,7,0,0,0,0,1,0,30,59,0,0,97,1,1,3
+Ressurection Balm,Balm,200,21,0,0,0,0,1,0,31,13,0,0,97,1,1,3
+Rough Diamond,Rock,400,21,0,0,0,0,0,0,71,0,0,0,135,0,0,5
+Power Geode,Rock,150,21,3,0,0,0,5,0,71,20,0,0,135,0,1,5
+Firestone,Rock,80,21,0,0,0,0,9,0,72,5,0,0,135,0,1,5
+Ravage Knife,Knife,800,1,4,0,6,0,0,1,25,0,0,0,110,0,1,5
+Assassin's Knife,Knife,1000,1,6,0,3,0,0,1,25,32,0,0,110,0,1,5
+Alien Blade,Waveblade,5000,1,13,0,3,0,0,1,7,32,0,0,94,0,1,30
+Demonslayer,Greatsword,8000,2,18,0,5,0,0,1,1,50,0,0,136,0,1,80
+Wyrmsbane,Broadsword,4000,1,12,0,2,0,0,1,0,131,0,0,86,0,1,30
+Flaming Sword,Red Sword,1200,1,10,0,1,0,0,1,0,33,0,0,138,0,1,30
+Smite,Hammer,4000,1,10,0,3,0,0,2,2,51,0,0,84,0,1,30
+Mace of Disruption,Mace,1250,1,10,0,2,0,0,2,2,35,0,0,81,0,1,40
+Black Halberd,Halberd,9000,2,20,0,5,3,0,3,5,0,0,0,137,0,1,100
+Adamantite Axe,Axe,7000,1,8,0,7,0,0,1,3,0,0,0,82,0,1,20
+Luck Charm,Stone,10,21,0,0,0,0,0,0,71,0,0,0,139,1,0,5
+Lodestone,Rock,100,21,0,0,0,0,0,0,72,129,0,0,29,0,1,5
+Airy Stone,Rock,400,21,0,0,0,0,0,0,71,117,0,0,29,0,1,5
+Basic Powder,Powder,40,8,0,0,0,0,4,0,63,121,41,0,42,0,1,2
+Powder of Lethe,Powder,30,8,0,0,0,0,2,0,63,63,42,0,43,0,1,2
+Potion of Paralysis,Potion,30,7,0,0,0,0,1,0,30,130,0,0,14,0,1,4
+Ring of Free Action,Ring,1000,18,0,0,0,0,0,0,49,120,0,0,69,0,1,2
+Ring of Resistance,Ring,4000,18,0,0,0,0,0,0,49,127,0,0,68,0,1,2
+Basic Necklace,Necklace,500,19,0,0,0,0,0,0,53,122,0,0,72,0,1,4
+Wand of Paralysis,Wand,170,9,0,0,0,0,5,0,34,125,0,0,24,0,1,6
+Wand of Acid,Wand,100,9,0,0,0,0,7,0,35,124,0,0,25,0,1,7
+Helm of Alertness,Helm,750,14,4,0,0,1,0,0,46,118,0,0,56,0,1,20
+Shield of Kron,Shield,250,12,6,1,0,2,6,0,13,123,0,0,49,0,1,40
+Pachtar's Plate,Nice Plate,8000,13,11,3,0,5,0,0,16,127,0,0,140,0,1,140
+Ring of Magery,Ring,200,18,2,0,0,4,40,0,49,20,0,0,141,0,1,4
+Boltblade,Short Sword,50,1,8,0,0,0,8,1,0,5,0,0,111,0,1,20
+Shield Mace,Mace,600,1,8,0,0,3,0,2,2,0,0,0,81,0,1,30
+Fury Crossbow,Crossbow,5000,23,0,0,7,5,0,0,21,0,0,0,142,0,1,60
+Quicksilver Band,Ring,120,18,2,0,0,0,5,0,49,26,0,0,66,0,1,4
+Holly,Holly,10,21,0,0,0,0,3,0,39,52,21,0,128,1,0,1
+Comfrey Root,Comfrey Root,15,21,0,0,0,0,3,0,40,53,22,0,129,1,0,1
+Glowing Nettle,Glowing Nettle,30,21,0,0,0,0,3,0,41,54,23,0,130,1,0,1
+Wormgrass,Wormgrass,50,21,0,0,0,0,3,0,39,55,24,0,131,1,0,1
+Graymold,Graymold,90,21,0,0,0,0,2,0,40,58,25,0,132,1,0,1
+Ember Flowers,Ember Flowers,120,21,0,0,0,0,2,0,41,57,26,0,133,1,0,1
+Mandrake Root,Mandrake Root,400,21,0,0,0,0,2,0,40,56,27,0,134,1,0,1
+Unicorn Horn,Unicorn Horn,0,21,0,0,0,0,1,0,95,111,43,0,143,1,0,2
+Asp Fangs,Asp Fangs,40,21,0,0,0,0,1,0,96,55,44,0,144,1,0,1
+Golem Gem,Golem Gem,100,21,0,0,0,0,1,0,56,0,45,0,145,1,0,1
+Cursed Axe,Axe,10,1,3,0,0,0,0,1,3,14,0,0,82,0,1,20
+Cursed Broadsword,Broadsword,10,1,6,0,0,0,0,1,0,14,0,0,86,0,1,25
+Cursed Greatsword,Greatsword,10,2,8,0,0,0,0,1,1,14,0,0,90,0,1,45
+Cursed Knife,Knife,10,1,1,0,0,0,0,1,25,14,0,0,110,0,1,8
+Cursed Shield,Shield,10,12,1,2,0,0,0,0,13,14,0,0,47,0,1,30
+Cursed Mace,Mace,10,1,1,0,0,0,0,2,2,14,0,0,81,0,1,20
+Cursed Ring,Ring,10,18,0,3,0,0,0,0,49,14,0,0,65,0,1,1
+Cursed Halberd,Halberd,10,2,8,0,0,0,0,3,5,14,0,0,89,0,1,50
+Goblin/Bandit Map,Piece of Paper,2,21,0,0,0,0,0,0,33,168,0,0,20,1,0,1
+Silver Ore,Ore,8,21,0,0,0,0,1,0,71,0,46,0,146,1,0,3
+Gold Ore,Ore,15,21,0,0,0,0,1,0,72,0,47,0,146,1,0,3
+Clothes and Goods,Fine Clothes,20,21,0,0,0,0,0,0,22,103,0,0,147,1,0,20
+Exotic Herbs,Exotic Herbs,50,21,0,0,0,0,0,0,40,132,0,0,147,1,0,8
+Perfect Flower,Perfect Flower,0,21,0,0,0,0,0,0,41,102,0,0,148,1,0,1
+Mithral Broadsword,Broadsword,3000,1,10,0,6,0,0,1,0,0,0,0,86,0,1,25
+Beastslayer Blade,Fine Sword,4000,1,12,0,3,0,0,1,0,134,0,0,86,1,1,30
+Skribbane Herb,Herbal Potion,40,7,0,0,0,0,1,0,30,135,48,0,14,1,1,3
