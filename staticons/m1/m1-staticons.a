@@ -1,0 +1,120 @@
+        ; D3 pc
+        ; D4 is used for dest but always 0
+        ; D5 status value
+        ; D6 right_limit but always $FA
+rlimit  equ $00FA
+
+        ; d3  pc
+        ; d4  dest / status value
+        ; d5  i
+        ; d6  right_limit
+        
+        ; -$02(a6) dest_rect.right
+        ; -$04(a6) dest_rect.bottom
+        ; -$06(a6) dest_rect.left
+        ; -$08(a6) dest_rect.top
+        
+        MAIN
+        org $0d34
+        
+        clr.w d5              ; 0 is status[1]
+        ; handle negative status 1 and 3, d6 is 0 or 4
+Loop2   move.w d3,d0          ; pc
+        muls.w #$0490,d0      ; adven[pc]
+        addi #$041e,d0        ; status[1]
+        add d5,d0             ; add 0 or 4 for status[1] or status[3]
+        lea $00019c60,a2      ; ADVEN
+        move.w (a2,d0.w),d4   ; adven[pc].status[i] -> status_value
+        tst.w d4
+        bge.s Next2
+        cmpi.w #-$08,d4
+        bgt.s Save2
+        moveq #-$08,d4
+Save2   muls.w #$0c,d4           ; shift_value = status[i] * 12
+        clr.w -(a7)              ; dest
+        move.b #$01,-(a7)        ; mode
+        move.l -$0004(a6),-(a7)  ; dest_rect.bottom-right
+        move.l -$0008(a6),-(a7)  ; dest_rect.top-left
+        move.l $00014fbc,-(a7)   ; PC_STATS_GWORLD
+
+        ; right = 204 + (i * 3)
+        move.w d5,d1             ; i is 0 or 4
+        muls.w #$03,d1           ; 0 or 12
+        addi.w #$90,d1           ; .144
+        move.w d1,-(a7)          ; source_rect.right
+
+        ; bottom = (value * 12) + 108
+        move.w d4,d2
+        addi.w #$006c,d2
+        move.w d2,-(a7)          ; source_rect.bottom
+
+        subi.w #$0c,d1
+        move.w d1,-(a7)          ; source_rect.left
+
+        subi.w #$0c,d2
+        move.w d2,-(a7)          ; source_rect.top
+
+        move.l $00014d5e,-(a7)   ; MIXED
+        jsr ($00002400).l        ; RECT_DRAW_SOME_ITEM
+        lea $001c(a7),a7
+        addi.w #$000d,-$0006(a6) ; dest_rect.left += 13
+        addi.w #$000d,-$0002(a6) ; dest_rect.right += 13
+Next2   cmpi.b #$04,d5
+        beq.s InitPos
+        moveq #$04,d5
+        bra Loop2
+         
+InitPos ; Handle positive statuses
+        clr.l d5              ; i = 0
+Loop    move.w d3,d0          ; pc
+        muls.w #$0490,d0      ; adven[pc]
+        addi #$041c,d0        ; status[0]
+        add d5,d0
+        add d5,d0             ; add 2*i for ith status
+        lea $00019c60,a2      ; ADVEN
+        move.w (a2,d0.w),d4   ; adven[pc].status[i] -> status_value
+        tst.w d4
+        ble.s Next
+        cmpi.w #$08,d4
+        blt.s Save
+        moveq #$08,d4
+Save    muls.w #$0c,d4           ; shift_value = status[i] * 12
+        ckr.w -(a7)              ; dest
+        move.b #$01,-(a7)        ; mode
+        move.l -$0004(a6),-(a7)  ; dest_rect.bottom-right
+        move.l -$0008(a6),-(a7)  ; dest_rect.top-left
+        move.l $00014fbc,-(a7)   ; PC_STATS_GWORLD
+
+        ; right = 72 + (i * 12)
+        move.w d5,d1             ; i
+        muls.w #$0c,d1           ;
+        addi.w #$48,d1
+        move.w d1,-(a7)          ; source_rect.right
+
+        ; bottom = value * 12
+        move.w d4,-(a7)          ; source_rect.bottom
+
+        subi.w #$0c,d1
+        move.w d1,-(a7)          ; source_rect.left
+
+        subi.w #$0c,d4
+        move.w d4,-(a7)          ; source_rect.top
+
+        move.l $00014d5e,-(a7)   ; MIXED
+        jsr ($00002400).l        ; RECT_DRAW_SOME_ITEM
+        lea $001c(a7),a7
+        addi.w #$000d,-$0006(a6) ; dest_rect.left += 13
+        addi.w #$000d,-$0002(a6) ; dest_rect.right += 13
+Next    cmp.w -$0002(a6),d6      ; dest_rect.right < right_limit
+        blt.s Return
+        addq #$1,d5              ; i++
+        cmpi.b #$06,d5           ; i < 6
+        blt Loop
+
+Return  bra Out                  ; $fb8
+        
+        dc.l 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+        org $0fb8
+Out
+        END
