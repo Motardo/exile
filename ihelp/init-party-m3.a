@@ -1,0 +1,1 @@
+	main 	org $a2	nop	nop	nop	MOVE.w    #$84,D5	BRA.S    *+$000e             ; cmpi@2	LEA      $0002883e,A0    clr.b    (a0,d5.w)	ADDQ.W   #$1,D5@1	CMPI.W   #$0ca0,D5           ; 84 + 3100 ~ [310][10]	BLT.S    *-$0010             ; lea                                              	move.w   #$0c7c,d5           ; 84 + 3064 ~ [306][4]	move.b   $01,(A0,d5.w)    nop	end
