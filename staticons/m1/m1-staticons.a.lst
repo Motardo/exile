@@ -1,0 +1,153 @@
+                               	        ; D3 pc
+                               	        ; D4 is used for dest but always 0
+                               	        ; D5 status value
+                               	        ; D6 right_limit but always $FA
+        0000 00FA              	rlimit  equ $00FA
+
+                               	        ; d3  pc
+                               	        ; d4  dest / status value
+                               	        ; d5  i
+                               	        ; d6  right_limit
+
+                               	        ; -$02(a6) dest_rect.right
+                               	        ; -$04(a6) dest_rect.bottom
+                               	        ; -$06(a6) dest_rect.left
+                               	        ; -$08(a6) dest_rect.top
+
+00000                          	        MAIN
+00000   0000 0D34              	        org $0d34
+00D34
+00D34   4245                   	        clr.w d5              ; 0 is status[1]
+00D36                          	        ; handle negative status 1 and 3, d6 is 0 or 4
+00D36   3003                   	Loop2   move.w d3,d0          ; pc
+00D38   C1FC 0490              	        muls.w #$0490,d0      ; adven[pc]
+00D3C   0640 041E              	        addi #$041e,d0        ; status[1]
+00D40   D045                   	        add d5,d0             ; add 0 or 4 for status[1] or status[3]
+00D42   45F9 0001 9C60         	        lea $00019c60,a2      ; ADVEN
+00D48   3832 0000              	        move.w (a2,d0.w),d4   ; adven[pc].status[i] -> status_value
+00D4C   4A44                   	        tst.w d4
+00D4E   6C5C            00DAC  	        bge.s Next2
+00D50   0C44 FFF8              	        cmpi.w #-$08,d4
+00D54   6E02            00D58  	        bgt.s Save2
+00D56   78F8                   	        moveq #-$08,d4
+00D58   C9FC 000C              	Save2   muls.w #$0c,d4           ; shift_value = status[i] * 12
+00D5C   4267                   	        clr.w -(a7)              ; dest
+00D5E   1F3C 0001              	        move.b #$01,-(a7)        ; mode
+00D62   2F2E FFFC              	        move.l -$0004(a6),-(a7)  ; dest_rect.bottom-right
+00D66   2F2E FFF8              	        move.l -$0008(a6),-(a7)  ; dest_rect.top-left
+00D6A   2F39 0001 4FBC         	        move.l $00014fbc,-(a7)   ; PC_STATS_GWORLD
+00D70
+00D70                          	        ; right = 204 + (i * 3)
+00D70   3205                   	        move.w d5,d1             ; i is 0 or 4
+00D72   C3FC 0003              	        muls.w #$03,d1           ; 0 or 12
+00D76   0641 0090              	        addi.w #$90,d1           ; .144
+00D7A   3F01                   	        move.w d1,-(a7)          ; source_rect.right
+00D7C
+00D7C                          	        ; bottom = (value * 12) + 108
+00D7C   3404                   	        move.w d4,d2
+00D7E   0642 006C              	        addi.w #$006c,d2
+00D82   3F02                   	        move.w d2,-(a7)          ; source_rect.bottom
+00D84
+00D84   0441 000C              	        subi.w #$0c,d1
+00D88   3F01                   	        move.w d1,-(a7)          ; source_rect.left
+00D8A
+00D8A   0442 000C              	        subi.w #$0c,d2
+00D8E   3F02                   	        move.w d2,-(a7)          ; source_rect.top
+00D90
+00D90   2F39 0001 4D5E         	        move.l $00014d5e,-(a7)   ; MIXED
+00D96   4EB9 0000 2400         	        jsr ($00002400).l        ; RECT_DRAW_SOME_ITEM
+00D9C   4FEF 001C              	        lea $001c(a7),a7
+00DA0   066E 000D FFFA         	        addi.w #$000d,-$0006(a6) ; dest_rect.left += 13
+00DA6   066E 000D FFFE         	        addi.w #$000d,-$0002(a6) ; dest_rect.right += 13
+00DAC   0C05 0004              	Next2   cmpi.b #$04,d5
+00DB0   6704            00DB6  	        beq.s InitPos
+00DB2   7A04                   	        moveq #$04,d5
+00DB4   6080            00D36  	        bra.s Loop2
+00DB6
+00DB6                          	InitPos ; Handle positive statuses
+00DB6 G 7A00                   	        clr.l d5              ; i = 0
+00DB8   3003                   	Loop    move.w d3,d0          ; pc
+00DBA   C1FC 0490              	        muls.w #$0490,d0      ; adven[pc]
+00DBE   0640 041C              	        addi #$041c,d0        ; status[0]
+00DC2   D045                   	        add d5,d0
+00DC4   D045                   	        add d5,d0             ; add 2*i for ith status
+00DC6   45F9 0001 9C60         	        lea $00019c60,a2      ; ADVEN
+00DCC   3832 0000              	        move.w (a2,d0.w),d4   ; adven[pc].status[i] -> status_value
+00DD0   4A44                   	        tst.w d4
+00DD2   6F56            00E2A  	        ble.s Next
+00DD4   0C44 0008              	        cmpi.w #$08,d4
+00DD8   6D02            00DDC  	        blt.s Save
+00DDA   7808                   	        moveq #$08,d4
+00DDC   C9FC 000C              	Save    muls.w #$0c,d4           ; shift_value = status[i] * 12
+00DE0   4267                   	        clr.w -(a7)              ; dest
+00DE2   1F3C 0001              	        move.b #$01,-(a7)        ; mode
+00DE6   2F2E FFFC              	        move.l -$0004(a6),-(a7)  ; dest_rect.bottom-right
+00DEA   2F2E FFF8              	        move.l -$0008(a6),-(a7)  ; dest_rect.top-left
+00DEE   2F39 0001 4FBC         	        move.l $00014fbc,-(a7)   ; PC_STATS_GWORLD
+00DF4
+00DF4                          	        ; right = 72 + (i * 12)
+00DF4   3205                   	        move.w d5,d1             ; i
+00DF6   C3FC 000C              	        muls.w #$0c,d1           ;
+00DFA   0641 0048              	        addi.w #$48,d1
+00DFE   3F01                   	        move.w d1,-(a7)          ; source_rect.right
+00E00
+00E00                          	        ; bottom = value * 12
+00E00   3F04                   	        move.w d4,-(a7)          ; source_rect.bottom
+00E02
+00E02   0441 000C              	        subi.w #$0c,d1
+00E06   3F01                   	        move.w d1,-(a7)          ; source_rect.left
+00E08
+00E08   0444 000C              	        subi.w #$0c,d4
+00E0C   3F04                   	        move.w d4,-(a7)          ; source_rect.top
+00E0E
+00E0E   2F39 0001 4D5E         	        move.l $00014d5e,-(a7)   ; MIXED
+00E14   4EB9 0000 2400         	        jsr ($00002400).l        ; RECT_DRAW_SOME_ITEM
+00E1A   4FEF 001C              	        lea $001c(a7),a7
+00E1E   066E 000D FFFA         	        addi.w #$000d,-$0006(a6) ; dest_rect.left += 13
+00E24   066E 000D FFFE         	        addi.w #$000d,-$0002(a6) ; dest_rect.right += 13
+00E2A   BC6E FFFE              	Next    cmp.w -$0002(a6),d6      ; dest_rect.right < right_limit
+00E2E   6D08            00E38  	        blt.s Return
+00E30   5245                   	        addq #$1,d5              ; i++
+00E32   0C05 0006              	        cmpi.b #$06,d5           ; i < 6
+00E36   6D80            00DB8  	        blt.s Loop
+00E38
+00E38   6000 017E       00FB8  	Return  bra Out                  ; $fb8
+00E3C
+00E3C   0000 0000 0000         	        dc.l 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+        0000 0000 0000
+00E78
+00E78   0000 0FB8              	        org $0fb8
+00FB8                          	Out
+00FB8                          	        END
+
+
+#0001      00000000    CODE LABEL
+INITPOS    00000DB6    CODE LABEL
+LOOP       00000DB8    CODE LABEL
+LOOP2      00000D36    CODE LABEL
+NEXT       00000E2A    CODE LABEL
+NEXT2      00000DAC    CODE LABEL
+OUT        00000FB8    CODE LABEL
+RETURN     00000E38    CODE LABEL
+SAVE       00000DDC    CODE LABEL
+SAVE2      00000D58    CODE LABEL
+
+
+
+
+#0001     00000000    CODE MODULE ENTRY MAIN
+RLIMIT    000000FA    EQU
+
+
+
+Elapsed time: 0.01 seconds.
+
+Assembly complete - no errors found.  120 lines.
