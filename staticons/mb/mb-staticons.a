@@ -1,0 +1,79 @@
+;;; Blades Status Icons Patch
+;;; modify draw_pc_effects to draw new status icons according to the level
+;;; of the status.
+
+; d3  $8(a6).w  pc
+; d4  dest
+; d5  right_limit
+; d6  name_width/i
+; d7  shift_value
+
+; -$02(a6) dest_rect.right
+; -$04(a6) dest_rect.bottom
+; -$06(a6) dest_rect.left
+; -$08(a6) dest_rect.top
+; -$98(a6) source_rects (18 * 8 bytes)
+; -$9c(a6) dlog_dest_rect.bottom
+; -$a0(a6) dlog_dest_rect.top
+; -$a6(a6) store_color (RGBColor 6 bytes)
+
+	MAIN
+	org $1ae6
+	
+	clr.l	d6 		; i = 0
+Loop	move.w	d3,d0		; pc
+	muls.w	#$076a,d0	; adven[pc]
+	addi	#$60,d0		; status[0]
+	add	d6,d0
+	add	d6,d0		; add 2*i for ith status
+	lea	$00036bfc,a2	; ADVEN
+	adda.l	d0,a2		; adven[pc].status[i]
+	movea.w	(a2),a0
+	move.l	a0,d7 		; status value
+	tst.w	d7
+	beq.s	Next
+	bgt.s	CkMax
+	cmpi.b	#$01,d6		; i == bless/curse
+	beq.s	CkMin
+	cmpi.b	#$03,d6		; i == slow/haste
+	beq.s	CkMin
+	cmpi.b	#$0b,d6		; i == sleep
+	bne.s	Next
+CkMin	cmpi.w	#-$08,d7	; status value
+	bgt.s	Save
+	move.w	#-$08,d7
+CkMax	cmpi.w	#$08,d7		; status value
+	blt.s	Save
+	move.w	#$08,d7
+Save	muls.w	#$0c,d7		; shift_value = status[i] * 12
+	move.w	d4,-(a7) 	; dest
+	move.b	#$01,-(a7) 	; mode
+	move.l	-$0004(a6),-(a7) 	; dest_rect.bottom
+	move.l	-$0008(a6),-(a7) 	; dest_rect.top
+	move.l	$00011b8a,-(a7) 	; PC_STATS_GWORLD
+	move.w	d6,d1		; i
+	asl	#$03,d1		; i * 8
+	lea	(a6,d1.w),a1		; a1 is frame pointer offset by i*8
+	move.w	-$0092(a1),d0	; source_rects[i].right
+	add.w	d7,d0		; shift_value + right
+	move.w	d0,-(a7)	; source_rect[i].right + shift_value
+	move.w	-$0094(a1),-(a7) 	; source_rect[i].bottom
+	subi.w	#$0c,d0		; left = right - 12
+	move.w	d0,-(a7)	; source_rect[i].left is 12 less than right
+	move.w	-$0098(a1),-(a7) 	; source_rect[i*8].top
+	move.l	$00011b86,-(a7) 	; MIXED
+	jsr	($00003c34).l 	; RECT_DRAW_SOME_ITEM
+	lea	$001c(a7),a7
+	addi.w	#$000d,-$0006(a6)	; dest_rect.left += 13
+	addi.w	#$000d,-$0002(a6)	; dest_rect.right += 13
+Next	cmp.w	-$0002(a6),d5	; dest_rect.right < right_limit
+	blt.s	Return
+	addq	#$1,d6		; i++
+	cmpi.b	#$0e,d6		; i < 14
+	blt	Loop
+Return	bra	Out		; *+$440  $1fce
+	
+	dc.l	0, 0, 0, 0, 0, 0, 0
+	org $1fce
+Out
+	END
