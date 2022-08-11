@@ -1,0 +1,379 @@
+
+File: Wunk:Games:Blades of Exile folder:Blades of Exile (Fat) v1.0.2, Resource 2, Type: CODE
+First jump table entry offset = $B10, Jump table entries used = 169
+Segment size = $C4A4 [50340]
+00001A04: 4E56 FF5A       'NV.Z'          LINK     A6,#$FF5A           
+00001A08: 48E7 1F20       'H.. '          MOVEM.L  D3-D7/A2,-(A7)      
+00001A0C: 362E 0008       '6...'          MOVE.W   $0008(A6),D3        
+00001A10: 41F9 0000 AC78  'A....x'        LEA      $0000AC78,A0        
+00001A16: 43EE FF68       'C..h'          LEA      -$0098(A6),A1       
+00001A1A: 7023            'p#'            MOVEQ    #$23,D0             ; '#'
+00001A1C: 22D8            '".'            MOVE.L   (A0)+,(A1)+         
+00001A1E: 51C8 FFFC       'Q...'          DBF      D0,*-$0002          ; 00001A1C
+00001A22: 2D79 0000 AC70  '-y...p'        MOVE.L   $0000AC70,-$0008(A6) 
+          FFF8            '..'    
+00001A2A: 2D79 0000 AC74  '-y...t'        MOVE.L   $0000AC74,-$0004(A6) 
+          FFFC            '..'    
+00001A32: 2D79 0000 AC68  '-y...h'        MOVE.L   $0000AC68,-$00A0(A6) 
+          FF60            '.`'    
+00001A3A: 2D79 0000 AC6C  '-y...l'        MOVE.L   $0000AC6C,-$009C(A6) 
+          FF64            '.d'    
+00001A42: 7800            'x.'            MOVEQ    #$00,D4             
+00001A44: 3A3C 00FA       ':<..'          MOVE.W   #$00FA,D5           
+00001A48: 7800            'x.'            MOVEQ    #$00,D4             
+00001A4A: 486E FF5A       'Hn.Z'          PEA      -$00A6(A6)          
+00001A4E: AA1A            '..'            _GetBackColor                     ; AA1A
+00001A50: 4878 001E       'Hx..'          PEA      $001E               
+00001A54: A863            '.c'            _BackColor                     ; A863
+00001A56: 0C43 000A       '.C..'          CMPI.W   #$000A,D3           
+00001A5A: 6D28            'm('            BLT.S    *+$002A             ; 00001A84
+00001A5C: 0443 000A       '.C..'          SUBI.W   #$000A,D3           
+00001A60: 3A3C 01EA       ':<..'          MOVE.W   #$01EA,D5           
+00001A64: 2D6E FF60 FFF8  '-n.`..'        MOVE.L   -$00A0(A6),-$0008(A6) 
+00001A6A: 2D6E FF64 FFFC  '-n.d..'        MOVE.L   -$009C(A6),-$0004(A6) 
+00001A70: 7802            'x.'            MOVEQ    #$02,D4             
+00001A72: 7C19            '|.'            MOVEQ    #$19,D6             
+00001A74: CDC3            '..'            MULS.W   D3,D6               
+00001A76: 0646 0012       '.F..'          ADDI.W   #$0012,D6           
+00001A7A: DD6E FFF8       '.n..'          ADD.W    D6,-$0008(A6)       
+00001A7E: DD6E FFFC       '.n..'          ADD.W    D6,-$0004(A6)       
+00001A82: 6044            '`D'            BRA.S    *+$0046             ; 00001AC8
+00001A84: 3003            '0.'            MOVE.W   D3,D0               
+00001A86: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001A8A: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001A90: 4870 0802       'Hp..'          PEA      $02(A0,D0.L)        
+00001A94: 4EB9 0000 3F28  'N...?('        JSR      $00003F28           
+00001A9A: 3C00            '<.'            MOVE.W   D0,D6               
+00001A9C: 3A39 0001 F3D6  ':9....'        MOVE.W   $0001F3D6,D5        
+00001AA2: 5B45            '[E'            SUBQ.W   #$5,D5              
+00001AA4: 7021            'p!'            MOVEQ    #$21,D0             ; '!'
+00001AA6: D046            '.F'            ADD.W    D6,D0               
+00001AA8: 3D40 FFFA       '=@..'          MOVE.W   D0,-$0006(A6)       
+00001AAC: 700C            'p.'            MOVEQ    #$0C,D0             
+00001AAE: D06E FFFA       '.n..'          ADD.W    -$0006(A6),D0       
+00001AB2: 3D40 FFFE       '=@..'          MOVE.W   D0,-$0002(A6)       
+00001AB6: 700D            'p.'            MOVEQ    #$0D,D0             
+00001AB8: C1C3            '..'            MULS.W   D3,D0               
+00001ABA: D16E FFF8       '.n..'          ADD.W    D0,-$0008(A6)       
+00001ABE: 700D            'p.'            MOVEQ    #$0D,D0             
+00001AC0: C1C3            '..'            MULS.W   D3,D0               
+00001AC2: D16E FFFC       '.n..'          ADD.W    D0,-$0004(A6)       
+00001AC6: 584F            'XO'            ADDQ.W   #$4,A7              
+00001AC8: 3003            '0.'            MOVE.W   D3,D0               
+00001ACA: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001ACE: 45F9 0003 6BFC  'E...k.'        LEA      $00036BFC,A2        
+00001AD4: D5C0            '..'            ADDA.L   D0,A2               
+00001AD6: 3052            '0R'            MOVEA.W  (A2),A0             
+00001AD8: 2008            ' .'            MOVE.L   A0,D0               
+00001ADA: 81FC 000A       '....'          DIVS.W   #$000A,D0           
+00001ADE: 4840            'H@'            SWAP     D0                  
+00001AE0: 5340            'S@'            SUBQ.W   #$1,D0              
+00001AE2: 6600 04F0       'f...'          BNE      *+$04F2             ; 00001FD4
+00001AE6: 4A6A 0060       'Jj.`'          TST.W    $0060(A2)           
+00001AEA: 6F3E            'o>'            BLE.S    *+$0040             ; 00001B2A
+00001AEC: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001AF0: 6F38            'o8'            BLE.S    *+$003A             ; 00001B2A
+00001AF2: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001AF4: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001AF8: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001AFC: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001B00: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001B06: 2F2E FF8C       '/...'          MOVE.L   -$0074(A6),-(A7)    
+00001B0A: 2F2E FF88       '/...'          MOVE.L   -$0078(A6),-(A7)    
+00001B0E: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001B14: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001B1A: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001B20: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001B26: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001B2A: 3003            '0.'            MOVE.W   D3,D0               
+00001B2C: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001B30: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001B36: 4A70 0862       'Jp.b'          TST.W    $62(A0,D0.L)        
+00001B3A: 6F38            'o8'            BLE.S    *+$003A             ; 00001B74
+00001B3C: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001B3E: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001B42: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001B46: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001B4A: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001B50: 2F2E FF7C       '/..|'          MOVE.L   -$0084(A6),-(A7)    
+00001B54: 2F2E FF78       '/..x'          MOVE.L   -$0088(A6),-(A7)    
+00001B58: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001B5E: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001B64: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001B6A: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001B70: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001B74: 3003            '0.'            MOVE.W   D3,D0               
+00001B76: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001B7A: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001B80: 4A70 0862       'Jp.b'          TST.W    $62(A0,D0.L)        
+00001B84: 6C38            'l8'            BGE.S    *+$003A             ; 00001BBE
+00001B86: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001B88: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001B8C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001B90: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001B94: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001B9A: 2F2E FF84       '/...'          MOVE.L   -$007C(A6),-(A7)    
+00001B9E: 2F2E FF80       '/...'          MOVE.L   -$0080(A6),-(A7)    
+00001BA2: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001BA8: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001BAE: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001BB4: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001BBA: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001BBE: 3003            '0.'            MOVE.W   D3,D0               
+00001BC0: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001BC4: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001BCA: 3E30 0864       '>0.d'          MOVE.W   $64(A0,D0.L),D7     
+00001BCE: 4A47            'JG'            TST.W    D7                  
+00001BD0: 6F4E            'oN'            BLE.S    *+$0050             ; 00001C20
+00001BD2: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001BD4: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001BD8: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001BDC: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001BE0: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001BE6: 0C47 0004       '.G..'          CMPI.W   #$0004,D7           
+00001BEA: 6E04            'n.'            BGT.S    *+$0006             ; 00001BF0
+00001BEC: 7000            'p.'            MOVEQ    #$00,D0             
+00001BEE: 6002            '`.'            BRA.S    *+$0004             ; 00001BF2
+00001BF0: 7001            'p.'            MOVEQ    #$01,D0             
+00001BF2: 48C0            'H.'            EXT.L    D0                  
+00001BF4: E788            '..'            LSL.L    #$3,D0              
+00001BF6: 41EE FF68       'A..h'          LEA      -$0098(A6),A0       
+00001BFA: D1C0            '..'            ADDA.L   D0,A0               
+00001BFC: 2F28 0004       '/(..'          MOVE.L   $0004(A0),-(A7)     
+00001C00: 2F28 0000       '/(..'          MOVE.L   $0000(A0),-(A7)     
+00001C04: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001C0A: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001C10: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001C16: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001C1C: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001C20: 3003            '0.'            MOVE.W   D3,D0               
+00001C22: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001C26: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001C2C: 4A70 0868       'Jp.h'          TST.W    $68(A0,D0.L)        
+00001C30: 6F38            'o8'            BLE.S    *+$003A             ; 00001C6A
+00001C32: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001C34: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001C38: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001C3C: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001C40: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001C46: 2F2E FF94       '/...'          MOVE.L   -$006C(A6),-(A7)    
+00001C4A: 2F2E FF90       '/...'          MOVE.L   -$0070(A6),-(A7)    
+00001C4E: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001C54: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001C5A: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001C60: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001C66: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001C6A: 3003            '0.'            MOVE.W   D3,D0               
+00001C6C: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001C70: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001C76: 4A70 0866       'Jp.f'          TST.W    $66(A0,D0.L)        
+00001C7A: 6F38            'o8'            BLE.S    *+$003A             ; 00001CB4
+00001C7C: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001C7E: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001C82: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001C86: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001C8A: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001C90: 2F2E FF9C       '/...'          MOVE.L   -$0064(A6),-(A7)    
+00001C94: 2F2E FF98       '/...'          MOVE.L   -$0068(A6),-(A7)    
+00001C98: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001C9E: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001CA4: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001CAA: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001CB0: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001CB4: 3003            '0.'            MOVE.W   D3,D0               
+00001CB6: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001CBA: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001CC0: 4A70 0866       'Jp.f'          TST.W    $66(A0,D0.L)        
+00001CC4: 6C38            'l8'            BGE.S    *+$003A             ; 00001CFE
+00001CC6: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001CC8: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001CCC: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001CD0: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001CD4: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001CDA: 2F2E FFAC       '/...'          MOVE.L   -$0054(A6),-(A7)    
+00001CDE: 2F2E FFA8       '/...'          MOVE.L   -$0058(A6),-(A7)    
+00001CE2: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001CE8: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001CEE: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001CF4: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001CFA: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001CFE: 3003            '0.'            MOVE.W   D3,D0               
+00001D00: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001D04: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001D0A: 4A70 086A       'Jp.j'          TST.W    $6A(A0,D0.L)        
+00001D0E: 6F3E            'o>'            BLE.S    *+$0040             ; 00001D4E
+00001D10: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001D14: 6F38            'o8'            BLE.S    *+$003A             ; 00001D4E
+00001D16: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001D18: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001D1C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001D20: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001D24: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001D2A: 2F2E FFB4       '/...'          MOVE.L   -$004C(A6),-(A7)    
+00001D2E: 2F2E FFB0       '/...'          MOVE.L   -$0050(A6),-(A7)    
+00001D32: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001D38: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001D3E: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001D44: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001D4A: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001D4E: 3003            '0.'            MOVE.W   D3,D0               
+00001D50: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001D54: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001D5A: 4A70 086C       'Jp.l'          TST.W    $6C(A0,D0.L)        
+00001D5E: 6F3E            'o>'            BLE.S    *+$0040             ; 00001D9E
+00001D60: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001D64: 6F38            'o8'            BLE.S    *+$003A             ; 00001D9E
+00001D66: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001D68: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001D6C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001D70: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001D74: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001D7A: 2F2E FFBC       '/...'          MOVE.L   -$0044(A6),-(A7)    
+00001D7E: 2F2E FFB8       '/...'          MOVE.L   -$0048(A6),-(A7)    
+00001D82: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001D88: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001D8E: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001D94: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001D9A: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001D9E: 3003            '0.'            MOVE.W   D3,D0               
+00001DA0: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001DA4: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001DAA: 4A70 086E       'Jp.n'          TST.W    $6E(A0,D0.L)        
+00001DAE: 6F3E            'o>'            BLE.S    *+$0040             ; 00001DEE
+00001DB0: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001DB4: 6F38            'o8'            BLE.S    *+$003A             ; 00001DEE
+00001DB6: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001DB8: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001DBC: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001DC0: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001DC4: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001DCA: 2F2E FFC4       '/...'          MOVE.L   -$003C(A6),-(A7)    
+00001DCE: 2F2E FFC0       '/...'          MOVE.L   -$0040(A6),-(A7)    
+00001DD2: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001DD8: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001DDE: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001DE4: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001DEA: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001DEE: 3003            '0.'            MOVE.W   D3,D0               
+00001DF0: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001DF4: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001DFA: 4A70 0870       'Jp.p'          TST.W    $70(A0,D0.L)        
+00001DFE: 6F3E            'o>'            BLE.S    *+$0040             ; 00001E3E
+00001E00: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001E04: 6F38            'o8'            BLE.S    *+$003A             ; 00001E3E
+00001E06: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001E08: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001E0C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001E10: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001E14: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001E1A: 2F2E FFCC       '/...'          MOVE.L   -$0034(A6),-(A7)    
+00001E1E: 2F2E FFC8       '/...'          MOVE.L   -$0038(A6),-(A7)    
+00001E22: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001E28: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001E2E: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001E34: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001E3A: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001E3E: 3003            '0.'            MOVE.W   D3,D0               
+00001E40: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001E44: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001E4A: 4A70 0872       'Jp.r'          TST.W    $72(A0,D0.L)        
+00001E4E: 6F3E            'o>'            BLE.S    *+$0040             ; 00001E8E
+00001E50: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001E54: 6F38            'o8'            BLE.S    *+$003A             ; 00001E8E
+00001E56: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001E58: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001E5C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001E60: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001E64: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001E6A: 2F2E FFD4       '/...'          MOVE.L   -$002C(A6),-(A7)    
+00001E6E: 2F2E FFD0       '/...'          MOVE.L   -$0030(A6),-(A7)    
+00001E72: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001E78: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001E7E: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001E84: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001E8A: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001E8E: 3003            '0.'            MOVE.W   D3,D0               
+00001E90: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001E94: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001E9A: 4A70 0874       'Jp.t'          TST.W    $74(A0,D0.L)        
+00001E9E: 6F3E            'o>'            BLE.S    *+$0040             ; 00001EDE
+00001EA0: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001EA4: 6F38            'o8'            BLE.S    *+$003A             ; 00001EDE
+00001EA6: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001EA8: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001EAC: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001EB0: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001EB4: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001EBA: 2F2E FFDC       '/...'          MOVE.L   -$0024(A6),-(A7)    
+00001EBE: 2F2E FFD8       '/...'          MOVE.L   -$0028(A6),-(A7)    
+00001EC2: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001EC8: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001ECE: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001ED4: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001EDA: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001EDE: 3003            '0.'            MOVE.W   D3,D0               
+00001EE0: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001EE4: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001EEA: 4A70 0876       'Jp.v'          TST.W    $76(A0,D0.L)        
+00001EEE: 6F3E            'o>'            BLE.S    *+$0040             ; 00001F2E
+00001EF0: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001EF4: 6F38            'o8'            BLE.S    *+$003A             ; 00001F2E
+00001EF6: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001EF8: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001EFC: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001F00: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001F04: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001F0A: 2F2E FFE4       '/...'          MOVE.L   -$001C(A6),-(A7)    
+00001F0E: 2F2E FFE0       '/...'          MOVE.L   -$0020(A6),-(A7)    
+00001F12: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001F18: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001F1E: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001F24: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001F2A: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001F2E: 3003            '0.'            MOVE.W   D3,D0               
+00001F30: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001F34: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001F3A: 4A70 0878       'Jp.x'          TST.W    $78(A0,D0.L)        
+00001F3E: 6F3E            'o>'            BLE.S    *+$0040             ; 00001F7E
+00001F40: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001F44: 6F38            'o8'            BLE.S    *+$003A             ; 00001F7E
+00001F46: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001F48: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001F4C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001F50: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001F54: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001F5A: 2F2E FFEC       '/...'          MOVE.L   -$0014(A6),-(A7)    
+00001F5E: 2F2E FFE8       '/...'          MOVE.L   -$0018(A6),-(A7)    
+00001F62: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001F68: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001F6E: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001F74: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001F7A: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001F7E: 3003            '0.'            MOVE.W   D3,D0               
+00001F80: C1FC 076A       '...j'          MULS.W   #$076A,D0           
+00001F84: 41F9 0003 6BFC  'A...k.'        LEA      $00036BFC,A0        
+00001F8A: 4A70 087A       'Jp.z'          TST.W    $7A(A0,D0.L)        
+00001F8E: 6F3E            'o>'            BLE.S    *+$0040             ; 00001FCE
+00001F90: BA6E FFFE       '.n..'          CMP.W    -$0002(A6),D5       
+00001F94: 6F38            'o8'            BLE.S    *+$003A             ; 00001FCE
+00001F96: 3F04            '?.'            MOVE.W   D4,-(A7)            
+00001F98: 1F3C 0001       '.<..'          MOVE.B   #$01,-(A7)          
+00001F9C: 2F2E FFFC       '/...'          MOVE.L   -$0004(A6),-(A7)    
+00001FA0: 2F2E FFF8       '/...'          MOVE.L   -$0008(A6),-(A7)    
+00001FA4: 2F39 0001 1B8A  '/9....'        MOVE.L   $00011B8A,-(A7)     
+00001FAA: 2F2E FFF4       '/...'          MOVE.L   -$000C(A6),-(A7)    
+00001FAE: 2F2E FFF0       '/...'          MOVE.L   -$0010(A6),-(A7)    
+00001FB2: 2F39 0001 1B86  '/9....'        MOVE.L   $00011B86,-(A7)     
+00001FB8: 4EB9 0000 3C34  'N...<4'        JSR      $00003C34           
+00001FBE: 066E 000D FFFA  '.n....'        ADDI.W   #$000D,-$0006(A6)   
+00001FC4: 066E 000D FFFE  '.n....'        ADDI.W   #$000D,-$0002(A6)   
+00001FCA: 4FEF 001C       'O...'          LEA      $001C(A7),A7        
+00001FCE: 486E FF5A       'Hn.Z'          PEA      -$00A6(A6)          
+00001FD2: AA15            '..'            _RGBBackColor                     ; AA15
+00001FD4: 4CDF 04F8       'L...'          MOVEM.L  (A7)+,D3-D7/A2      
+00001FD8: 4E5E            'N^'            UNLK     A6                  
+00001FDA: 4E75            'Nu'            RTS                          
+00001FDC: 9364 7261 775F  '.draw_'        DC.B     $80+$13, 'draw_pc_effects__Fs' ;MacsBug symbol
+          7063 5F65 6666  'pc_eff'
+00001FF0: 0000            '..'            DC.W     $0000               
+00001FF2: 4E56 0000       'NV..'          LINK     A6,#$0000           

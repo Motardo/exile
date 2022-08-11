@@ -1,0 +1,89 @@
+
+MC680xx Assembler - Ver 3.4                                                                                17-Sep-20  Page   1
+Copyright Apple Computer, Inc. 1984-1995
+
+Loc   F Object Code     Addr  M	Source Statement
+
+                               	;;; Blades Status Icons Patch
+                               	;;; modify draw_pc_effects to draw new status icons according to the level
+                               	;;; of the status.
+
+                               	; d3  $8(a6).w  pc
+                               	; d4  dest
+                               	; d5  right_limit
+                               	; d6  name_width/i
+                               	; d7  shift_value
+
+                               	; -$02(a6) dest_rect.right
+                               	; -$04(a6) dest_rect.bottom
+                               	; -$06(a6) dest_rect.left
+                               	; -$08(a6) dest_rect.top
+                               	; -$98(a6) source_rects (18 * 8 bytes)
+                               	; -$9c(a6) dlog_dest_rect.bottom
+                               	; -$a0(a6) dlog_dest_rect.top
+                               	; -$a6(a6) store_color (RGBColor 6 bytes)
+
+00000                          		MAIN
+00000   0000 1AE6              		org $1ae6
+01AE6
+01AE6 G 7C00                   		clr.l	d6 		; i = 0
+01AE8   3003                   	Loop	move.w	d3,d0		; pc
+01AEA   C1FC 076A              		muls.w	#$076a,d0	; adven[pc]
+01AEE   0640 0060              		addi	#$60,d0		; status[0]
+01AF2   D046                   		add	d6,d0
+01AF4   D046                   		add	d6,d0		; add 2*i for ith status
+01AF6   45F9 0003 6BFC         		lea	$00036bfc,a2	; ADVEN
+01AFC   D5C0                   		adda.l	d0,a2		; adven[pc].status[i]
+01AFE   3052                   		movea.w	(a2),a0
+01B00   2E08                   		move.l	a0,d7 		; status value
+01B02   4A47                   		tst.w	d7
+01B04   677A            01B80  		beq.s	Next
+01B06   6E1C            01B24  		bgt.s	CkMax
+01B08   0C06 0001              		cmpi.b	#$01,d6		; i == bless/curse
+01B0C   670C            01B1A  		beq.s	CkMin
+01B0E   0C06 0003              		cmpi.b	#$03,d6		; i == slow/haste
+01B12   6706            01B1A  		beq.s	CkMin
+01B14   0C06 000B              		cmpi.b	#$0b,d6		; i == sleep
+01B18   6666            01B80  		bne.s	Next
+01B1A   0C47 FFF8              	CkMin	cmpi.w	#-$08,d7	; status value
+01B1E   6E0E            01B2E  		bgt.s	Save
+01B20   3E3C FFF8              		move.w	#-$08,d7
+01B24   0C47 0008              	CkMax	cmpi.w	#$08,d7		; status value
+01B28   6D04            01B2E  		blt.s	Save
+01B2A   3E3C 0008              		move.w	#$08,d7
+01B2E   CFFC 000C              	Save	muls.w	#$0c,d7		; shift_value = status[i] * 12
+01B32   3F04                   		move.w	d4,-(a7) 	; dest
+01B34   1F3C 0001              		move.b	#$01,-(a7) 	; mode
+01B38   2F2E FFFC              		move.l	-$0004(a6),-(a7) 	; dest_rect.bottom
+01B3C   2F2E FFF8              		move.l	-$0008(a6),-(a7) 	; dest_rect.top
+01B40   2F39 0001 1B8A         		move.l	$00011b8a,-(a7) 	; PC_STATS_GWORLD
+01B46   3206                   		move.w	d6,d1		; i
+01B48   E741                   		asl	#$03,d1		; i * 8
+01B4A   43F6 1000              		lea	(a6,d1.w),a1		; a1 is frame pointer offset by i*8
+01B4E   3029 FF6E              		move.w	-$0092(a1),d0	; source_rects[i].right
+01B52   D047                   		add.w	d7,d0		; shift_value + right
+01B54   3F00                   		move.w	d0,-(a7)	; source_rect[i].right + shift_value
+01B56   3F29 FF6C              		move.w	-$0094(a1),-(a7) 	; source_rect[i].bottom
+01B5A   0440 000C              		subi.w	#$0c,d0		; left = right - 12
+01B5E   3F00                   		move.w	d0,-(a7)	; source_rect[i].left is 12 less than right
+01B60   3F29 FF68              		move.w	-$0098(a1),-(a7) 	; source_rect[i*8].top
+01B64   2F39 0001 1B86         		move.l	$00011b86,-(a7) 	; MIXED
+01B6A   4EB9 0000 3C34         		jsr	($00003c34).l 	; RECT_DRAW_SOME_ITEM
+01B70   4FEF 001C              		lea	$001c(a7),a7
+01B74   066E 000D FFFA         		addi.w	#$000d,-$0006(a6)	; dest_rect.left += 13
+01B7A   066E 000D FFFE         		addi.w	#$000d,-$0002(a6)	; dest_rect.right += 13
+01B80   BA6E FFFE              	Next	cmp.w	-$0002(a6),d5	; dest_rect.right < right_limit
+01B84   6D0A            01B90  		blt.s	Return
+01B86   5246                   		addq	#$1,d6		; i++
+01B88   0C06 000E              		cmpi.b	#$0e,d6		; i < 15
+01B8C   6D00 FF5A       01AE8  		blt	Loop
+01B90   6000 043C       01FCE  	Return	bra	Out		; *+$440  $1fce
+01B94
+01B94   0000 0000 0000         		dc.l	0, 0, 0, 0, 0, 0, 0
+01BB0   0000 1FCE              		org $1fce
+01FCE                          	Out
+01FCE                          		END
+
+Elapsed time: 0.01 seconds.
+
+Assembly complete - no errors found.  79 lines.
